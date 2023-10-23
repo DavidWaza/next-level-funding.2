@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,11 +18,145 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
 }
+
+/* .body-bg {
+  background-image: url('/assets/spiral.png'), url('/assets/hero-bg.png');
+  background-position: top, center; 
+  background-size: cover, cover; 
+  background-repeat: no-repeat, no-repeat; 
+  background-blend-mode: overlay;
+  padding-top:6rem ;
+} */
+
+.body-bg {
+  background-image: url("/assets/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 5%;
+  height: 100vh;
+}
+
+.home-bg {
+  background-image: url("/assets/Homepage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 5%;
+}
+
+.body-container {
+  background-color: black;
+}
+.section-container-un {
+  background-image: url("/public/assets/Ellipse.png");
+}
+/* FONTs */
+.lexend {
+  font-family: "Lexend", sans-serif;
+}
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
+/*  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TEXT */
+.text-primary {
+  color: #fff;
+}
+.text-secondary {
+  color: #3658c1;
+}
+.text-tetiary {
+  color: #991275;
+}
+/*  */
+
+.span-oppo {
+  background: linear-gradient(180deg, #991275 10.55%, #3658c1 125.93%);
+  background-clip: text;
+  -webkit-background-clip: text; /* For better browser compatibility */
+  color: transparent;
+}
+
+.morph {
+  @apply bg-white bg-opacity-5 backdrop-blur-sm text-white border-2 shadow-lg rounded-[30px] py-10 2xl:px-5;
+}
+
+.number-morph {
+  @apply bg-white bg-opacity-5 backdrop-blur-sm text-white border shadow-lg rounded-full border-slate-500;
+}
+.price-card-morph {
+  @apply backdrop-blur-sm text-white border shadow-lg rounded-2xl border-slate-500 bg-blend-overlay;
+}
+.glassmorph {
+  @apply  backdrop-blur-sm w-full bg-white bg-opacity-5 text-white border border-slate-800 shadow-lg rounded-xl py-5 2xl:px-5 cursor-pointer;
+}
+.bullet-point::before {
+  content: "";
+  position: relative;
+  right: 15px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.glass-morph-table {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.glass-morph-header {
+  border-radius: 20%;
+  backdrop-filter: blur(10px);
+  border-radius: 35px;
+}
+table {
+  border-radius: 30px !important;
+}
+td {
+  border: none !important;
+  padding: 30px 15px !important;
+}
+tbody {
+  padding: 0px 30px;
+}
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.disclaimer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border: 1px solid red;
+}
+

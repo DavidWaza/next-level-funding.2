@@ -1,118 +1,249 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Hero from "./components/Hero";
+import GlassMorph from "./components/glassMorph";
+import GlassMorphCard from "./components/GlassMorphCard";
+import Button from "./components/Button";
+import PriceCard from "./components/PriceCard";
+import AccordionComponent from "./components/AccordionComponent";
+import Footer from "./components/Footer";
+import MarqueeComponent from "./components/MarqueeComponent";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="h-full">
+      <Hero />
+      <div className="home-bg text-white">
+        <div className="py-[5rem]">
+          <MarqueeComponent />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <section className="2xl:py-[10rem] grid flex-col justify-center items-center px-[2rem] py-[2rem]">
+          <p className="lexend uppercase text-slate-400 text-center text-sm">
+            Unlock your trading potential with our leading propritary trading
+            firm
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center mt-3">
+            Your success, Our success
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
+          <div className="grid lg:grid-cols-3 my-10 gap-4 lg:px-0">
+            <GlassMorph
+              prefix="$"
+              start={100}
+              end={200}
+              suffix="M+"
+              desc="Total Payout"
+            />
+            <GlassMorph
+              start={0}
+              end={5}
+              suffix="hrs"
+              desc="Avg. Payout Time"
+            />
+            <GlassMorph start={0} end={100} suffix="K+" desc="Traders Funded" />
+          </div>
+        </section>
+        <section className="2xl:px-[10rem] px-[2rem]">
+          <p className="lexend uppercase text-slate-400 text-sm text-center 2xl:text-left">
+            TURNING TRADERS INTO CHAMPIONS – LET US INVEST IN YOUR SUCCESS.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p className="font-bold space-grotesk 2xl:text-6xl text-3xl mt-3 text-center 2xl:text-left">
+            Next Level Funding Benefits
           </p>
-        </a>
+          <div className="grid lg:grid-cols-3 my-10 gap-10 lg:px-0">
+            <GlassMorphCard
+              img="/assets/Time-illustration.png"
+              title="No Time Limits"
+              text={`We do not have a certain amount of time limit for you to pass your one step evaluation. You have unlimited time to complete the phase and can trade without the stress of having to reach a target in a set amount of time.`}
+              className="text-3xl"
+            />
+            <GlassMorphCard
+              img="\assets\Computer-illustration.png"
+              title="Lowest targets"
+              text={`With our one step evaluation being only a 12% profit target we have one of the most competitive targets across all funding companies.`}
+              className="text-3xl"
+            />{" "}
+            <GlassMorphCard
+              img="\assets\iphone-illustration.png"
+              title="Money back"
+              text={`Get your money you paid for your evaluation account back once you reach your first profit split on your live account providing you did not pass with a HFT algorithm.`}
+              className="text-3xl"
+            />
+          </div>
+          <div className="flex justify-center">
+            <Button
+              className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
+              text="learn more"
+            />
+          </div>
+          <section className="2xl:mt-[15rem] mt-[5rem] grid flex-col justify-center items-center hidden 2xl:block">
+            <p className="lexend uppercase text-slate-400 text-center text-sm">
+              Your Path to Profitable Trading Begins Here
+            </p>
+            <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center mt-3">
+              Take your trading to the next level with us
+            </p>
+            <div className="flex justify-around ">
+              <img
+                src="/assets/Phone-illustration.png"
+                className="hidden 2xl:block ml-20"
+                alt="phone-illus"
+              />
+              <div className="backdrop 2xl:w-1/4 h-1/4 mt-32 morph border-none bg-white">
+                <img
+                  src="/assets/crown-pink.png"
+                  className="w-5 h-auto my-5 "
+                  alt="crown-pink"
+                />
+                <p>No Risk, Just Profits</p>
+              </div>
+            </div>
+            <div className="relative -top-[10rem] -right-[10rem]">
+              <div className=" number-morph w-9 flex items-center justify-center h-20">
+                <span>1</span>
+              </div>
+              <div className="number-morph w-10 rounded-full h-10 flex items-center justify-center mt-4">
+                <span>2</span>
+              </div>
+              <div className="number-morph w-10 rounded-full h-10 flex items-center justify-center mt-4">
+                <span>3</span>
+              </div>
+            </div>
+            <div className="flex justify-center relative -top-[32rem]">
+              <div className="backdrop 2xl:w-3/5 w-full h-1/4 mt-36 morph relative border-blue-800 z-10">
+                <img
+                  src="/assets/crown-blue.png"
+                  className="w-5 h-auto my-5"
+                  alt="blue-pink"
+                />
+                <p className="2xl:text-5xl space-grotesk font-medium text-secondary">
+                  Trading Evaluation
+                </p>
+                <p className="text-sm w-10/12 mt-8 pb-14 opacity-80 text-blue-300">
+                  Our evaluation account allows traders to prove their skill in
+                  order to trade our live funds.
+                </p>
+                <div className="absolute left-auto -right-20 bottom-5">
+                  <Button
+                    className="bg-[#3658C1] border-none lexend"
+                    text="get funded"
+                    showArrow={true}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="backdrop 2xl:w-1/3 mt-32 border-none bg-white absolute right-96 -top-[43rem] z-0 flex flex-col morph">
+                <img
+                  src="/assets/crown-pink.png"
+                  className="w-5 h-auto"
+                  alt="crown-pink"
+                />
+                <p className="py-5 lexend">High Profit Splits</p>
+                <p className="text-xs pt-7 w-4/5 lexend">
+                  Our profit split for the first month on all accounts is 80%.
+                  On the second month you will then receive 90% of all profits
+                  made!
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className=" grid flex-col justify-center items-center mt-20 2xl:-mt-[10rem] ">
+            <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
+              Tailored Solutions to Amplify Your Trading Success
+            </p>
+            <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center mt-3 px-3">
+              Our Evaluation Packages
+            </p>
+            <div className="mt-10 grid grid-cols-1 2xl:grid-cols-3 gap-5 px-7">
+              <PriceCard />
+              <PriceCard />
+              <PriceCard />
+            </div>
+            <div className="mt-5 grid justify-center flex-col items-center w-full">
+              <div className="2xl:flex gap-5 block px-7">
+                <PriceCard
+                  className="bg-[#3658c1]"
+                  spanClassName="text-white"
+                />
+                <PriceCard
+                  className="bg-[#3658c1]"
+                  spanClassName="text-white"
+                />
+              </div>
+              <div className="2xl:flex block justify-center my-8">
+                <Button
+                  className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
+                  text="read trading rules"
+                />
+              </div>
+            </div>
+          </section>
+          <section className="mt-10">
+            <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
+              To explore common issues
+            </p>
+            <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center mt-3 px-3">
+              Frequently asked questions
+            </p>
+            <div className="2xl:px-[10rem]">
+              <AccordionComponent
+                header="What is Nextlevelfunding?"
+                text="We are a company which provide capital to profitable traders. Prove you are profitable by completing the 2 step evaluation process then receive immediate funding up to $500k per person.
+"
+              />
+              <AccordionComponent
+                header="Will I Be Trading On A Demo Account Or A Live Account?"
+                text="We are a company which provide capital to profitable traders. Prove you are profitable by completing the 2 step evaluation process then receive immediate funding up to $500k per person.
+"
+              />
+            </div>
+          </section>
+          <section className="my-[10rem] relative hidden 2xl:block">
+            <img src="/assets/rec.svg" className="w-full h-auto " alt="" />
+            <div className="absolute top-[10%] z-10 left-[4rem]">
+              <p className=" lexend uppercase text-slate-400  text-sm px-3 ">
+                we would love to hear from you
+              </p>
+              <p className="space-grotesk font-bold text-[3rem] ">
+                Get in touch <br /> with us
+              </p>
+              <div className="flex gap-5 mt-6">
+                <div className="border-none border bg-slate-700 rounded-full p-3">
+                  <img src="/assets/bulb.svg" className="w-5 h-auto" alt="" />
+                </div>
+                <div className="border-none border bg-slate-700 rounded-full p-3">
+                  <img
+                    src="/assets/discord.svg"
+                    className="w-5 h-auto "
+                    alt=""
+                  />
+                </div>
+                <div className="border-none border bg-slate-700 rounded-full p-3">
+                  <img src="/assets/mail.svg" className="w-5 h-auto" alt="" />
+                </div>
+              </div>
+              <p className="w-1/2 mt-5 lexend font-thin">
+                Have a question that wasn’t answered in our FAQs page ? Reach
+                out to us and we will be happy to answer your questions
+              </p>
+              <div className="mt-[2rem]">
+                <Button
+                  className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-1/5"
+                  text="learn more"
+                />
+              </div>
+            </div>
+            <div className="absolute -top-[12rem] right-0">
+              <img
+                src="/assets/woman-sitting.svg"
+                className="w-3/4 h-auto"
+                alt=""
+              />
+            </div>
+          </section>
+        </section>
+        <section className="2xl:px-[7rem]">
+          <Footer />
+        </section>
       </div>
     </main>
-  )
+  );
 }
