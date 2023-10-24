@@ -5,6 +5,7 @@ import Button from "../components/Button";
 // import Testimonial from "../components/Testimonial";
 // import CoverflowCarousel from "../components/CoverflowCarousel";
 import Footer from "../components/Footer";
+import Testimonial from "../components/Testimonial";
 const AboutUs = () => {
   return (
     <main className="w-full body-bg pt-[5rem] text-white 2xl:h-[70vh] h-full">
@@ -71,7 +72,7 @@ const AboutUs = () => {
             <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-left ">
               Testimonials
             </p>
-            {/* <div className="pt-14"><Testimonial /></div> */}
+            {/* <Testimonial /> */}
           </section>
           <section>
             <section className="my-[10rem] relative hidden 2xl:block">

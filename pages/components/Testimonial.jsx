@@ -1,56 +1,62 @@
-import { register } from "swiper/element/bundle";
-
-// import required modules
-import GlassMorphCard from "./GlassMorphCard";
-
-import { Keyboard, Navigation, Pagination } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import React from 'react';
+import Slider from 'react-slick';
 
 const Testimonial = () => {
-  register();
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1, // Adjust this to scroll one slide at a time
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1, // Adjust this to scroll one slide at a time
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1, // Adjust this to scroll one slide at a time
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1, // Adjust this to scroll one slide at a time
+        },
+      },
+    ],
+  };
+
   return (
-    <>
-      <swiper-container
-        slides-per-view="4"
-        navigation="true"
-        pagination="true"
-        scrollbar="true"
-        breakpoints={{
-          768: {
-            slidesPerView: 1,
-          },
-        }}
-      >
-        <swiper-slide>
-          <GlassMorphCard
-            title="Excellent Service and ex..."
-            text="Next Level Funding offers an exceptional experience for traders, with their deep expertise, personalized guidance, and supportive community. Their commitment to risk management and transparency stands out, making it a top choice for both new and experienced traders looking for growth and success."
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <GlassMorphCard
-            title="Excellent Service and ex..."
-            text="Next Level Funding offers an exceptional experience for traders, with their deep expertise, personalized guidance, and supportive community. Their commitment to risk management and transparency stands out, making it a top choice for both new and experienced traders looking for growth and success."
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <GlassMorphCard
-            title="Excellent Service and ex..."
-            text="Next Level Funding offers an exceptional experience for traders, with their deep expertise, personalized guidance, and supportive community. Their commitment to risk management and transparency stands out, making it a top choice for both new and experienced traders looking for growth and success."
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <GlassMorphCard
-            title="Excellent Service and ex..."
-            text="Next Level Funding offers an exceptional experience for traders, with their deep expertise, personalized guidance, and supportive community. Their commitment to risk management and transparency stands out, making it a top choice for both new and experienced traders looking for growth and success."
-          />
-        </swiper-slide>
-      </swiper-container>
-    </>
+    <div>
+      <div className="carousel">
+        <Slider {...settings}>
+          <div className="box">
+            <h3>1</h3>
+          </div>
+          <div className="box">
+            <h3>2</h3>
+          </div>
+          <div className="box">
+            <h3>3</h3>
+          </div>
+          <div className="box">
+            <h3>3</h3>
+          </div>
+        </Slider>
+      </div>
+    </div>
   );
 };
+
 export default Testimonial;

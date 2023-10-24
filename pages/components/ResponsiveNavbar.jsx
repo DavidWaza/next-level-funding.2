@@ -5,8 +5,8 @@ import Link from "next/link";
 const ResponsiveNavbar = () => {
   return (
     <div className="">
-      <nav class="fixed w-full bg-white border-gray-200 dark:bg-[transparent] z-10">
-        <div class=" px-[5rem] flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav class=" fixed w-full bg-[transparent] border-gray-200  z-10">
+        <div class=" 2xl:px-[5rem] flex flex-wrap items-center justify-between 2xl:mx-auto p-4">
           <Link href="/" class="flex items-center">
             <img
               src="/assets/logo.png"

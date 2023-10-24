@@ -60,21 +60,6 @@ body {
 }
 /*  */
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* TEXT */
 .text-primary {
@@ -160,11 +145,13 @@ textarea {
   border: 1px solid red;
 }
 
+/* CAROUSEL */
 .cards {
   display: grid;
   place-items: center;
   justify-content: center;
   min-height: 50vh;
+  width: 100%;
 }
 .outer {
   display: flex;
@@ -216,3 +203,23 @@ textarea {
     transform: translateY(-100%) scale(0.7);
   }
 }
+/* TESTIMONIAL */
+.carousel {
+  padding: 5rem;
+  background-color: black;
+  color: #991275;
+  /* height: 100vh; */
+  width: 100%;
+}
+.box{
+  background-color: lightgreen;
+  height: 300px;
+  width: 100%;
+}
+.box h3{
+  text-align: center;
+  color: white;
+}
+ .slick-slide div {
+  margin: 0 1rem  ;
+ }

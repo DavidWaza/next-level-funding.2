@@ -75,7 +75,7 @@ export default function Home() {
               text="learn more"
             />
           </div>
-          <section className="2xl:mt-[25rem] mt-[30rem] grid flex-col justify-center items-center  2xl:block relative">
+          <section className="2xl:mt-[25rem] my-[40rem] grid flex-col justify-center items-center  2xl:block relative">
             <div className="absolute left-[10rem] -top-[10rem] hidden xl:block">
               <img src="/assets/phone-illustration.png" className="" alt="" />
             </div>
@@ -174,7 +174,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="absolute -top-[12rem] right-0">
+            <div className="absolute -top-[12rem]  right-0">
               <img
                 src="/assets/woman-sitting.svg"
                 className="w-3/4 h-auto"
