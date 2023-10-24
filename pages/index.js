@@ -1,5 +1,5 @@
 import Hero from "./components/Hero";
-import GlassMorph from "./components/glassMorph";
+import GlassMorph from "./components/GlassMorph";
 import GlassMorphCard from "./components/GlassMorphCard";
 import Button from "./components/Button";
 import PriceCard from "./components/PriceCard";
