@@ -1,27 +1,30 @@
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
+import MarqueeComponent from "./MarqueeComponent";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import { Container } from "@mui/material";
 
 const Hero = () => {
   return (
-    <>
-      <div className="w-full body-bg pt-[5rem] text-white 2xl:h-[70vh] h-full">
-        <div className="2xl:px-[10rem] px-[2rem] pt-[4rem]">
-          <div className="grid grid-cols-none 2xl:grid-cols-2 justify-center items-center ">
-            <div className="grid justify-center items-center">
-              <p className="uppercase text-[#537DFF] text-[14px] lg:text-sm text-center 2xl:text-left font-bold lexend">
-                Unlock your trading potential with our leading propriatary
-                trading firm
+    <div className="home-bg">
+      <Container maxWidth="xl">
+        <Box sx={{ paddingTop: 20, flexGrow: 1 }}>
+          <Grid container spacing={5}>
+            <Grid item xs={12} md={6} lg={6}>
+              <p className="uppercase text-[#537DFF] text-2xl lg:text-xl lg:text-left font-bold lexend text-center">
+                Next level funding
               </p>
-              <p className="py-3 lg:text-6xl text-[27px] font-bold space-grotesk text-center 2xl:text-left ">
-                Where <span className="span-oppo">Opportunities </span>Meet Precision: Your Path to
-                Financial Success.
+              <p className="py-3 lg:text-6xl text-[27px] font-bold space-grotesk text-center lg:text-left text-white">
+                Our Capital, Our Risk, Your Knowledge.
               </p>
-              <p className="text-md 2xl:text-xs 2xl:text-left text-center font-light lexend ">
-                With our program, you can get funded up to $500,000 with up to a
-                90% profit split.{" "}
+              <p className="text-md xl:text-sm lg:text-left text-center font-light lexend text-white">
+                With our program, you can get funded up to £1,000,000 with up to
+                a 90% profit split. Unlock Your Trading Potential with Our
+                Leading Proprietary Trading Firm
               </p>
-              <div className="2xl:flex grid gap-3 mt-14 justify-center 2xl:justify-start">
+              <div className="md:flex grid gap-3 mt-14 justify-center lg:justify-start">
                 <Button
                   className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
                   text="learn more"
@@ -32,20 +35,23 @@ const Hero = () => {
                   showArrow={true}
                 />
               </div>
-            </div>
-
-            <div className="flex justify-end 2xl:mt-24">
-              <Image
-                src="/assets/laptop.gif"
-                width={450}
-                height={50}
-                alt="trade-computer"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+            </Grid>
+            <Grid item xs={12} md={6} lg={6}>
+              <div className="flex xl:justify-end justify-center">
+                <img
+                  src="/assets/laptop.gif"
+                  className="2xl:w-[30rem] w-[15rem] h-auto"
+                  alt="trade-computer"
+                />
+              </div>
+            </Grid>
+          </Grid>
+          <Box sx={{paddingTop: 10, paddingBottom: 10}}>
+          <MarqueeComponent />
+          </Box>
+        </Box>
+      </Container>
+    </div>
   );
 };
 

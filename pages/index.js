@@ -15,7 +15,6 @@ export default function Home() {
       <Hero />
       <div className="home-bg text-white">
         <div className="py-[5rem]">
-          <MarqueeComponent />
         </div>
         <section className="2xl:py-[10rem] grid flex-col justify-center items-center px-[2rem] py-[2rem]">
           <p className="lexend uppercase text-slate-400 text-center text-sm">

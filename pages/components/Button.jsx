@@ -21,7 +21,7 @@ const Button = (props) => {
   return (
     <div>
       <button
-        className={`border px-6 rounded-full py-2 uppercase flex items-center gap-2 justify-center ${props.className}`}
+        className={`border xl:px-6 rounded-full py-2 uppercase flex items-center gap-2 justify-center text-white text-sm px-2 hover:bg-blue-900 ${props.className}`}
       >
         {props.showArrow && buttonImage}
         {props.text}
