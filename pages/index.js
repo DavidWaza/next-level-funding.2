@@ -186,7 +186,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="mt-10">
+          <section className="mt-10" id="faq">
             <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
               To explore common issues
             </p>
