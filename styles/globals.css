@@ -223,3 +223,11 @@ textarea {
  .slick-slide div {
   margin: 0 1rem  ;
  }
+
+.price-card {
+  transition: all .3s ease-in;
+}
+.price-card:hover {
+  transform: scale(1.05);
+  transition: all .3s ease-in;
+}
