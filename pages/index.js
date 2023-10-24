@@ -7,6 +7,7 @@ import AccordionComponent from "./components/AccordionComponent";
 import Footer from "./components/Footer";
 import MarqueeComponent from "./components/MarqueeComponent";
 import { PriceLists, accordionContents } from "@/lib/data";
+import MainCarousel from "./components/MainCarousel";
 
 export default function Home() {
   return (
@@ -74,79 +75,13 @@ export default function Home() {
               text="learn more"
             />
           </div>
-          <section className="2xl:mt-[15rem] mt-[5rem] grid flex-col justify-center items-center hidden 2xl:block">
-            <p className="lexend uppercase text-slate-400 text-center text-sm">
-              Your Path to Profitable Trading Begins Here
-            </p>
-            <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center mt-3">
-              Take your trading to the next level with us
-            </p>
-            <div className="flex justify-around ">
-              <img
-                src="/assets/Phone-illustration.png"
-                className="hidden 2xl:block ml-20"
-                alt="phone-illus"
-              />
-              <div className="backdrop 2xl:w-1/4 h-1/4 mt-32 morph border-none bg-white">
-                <img
-                  src="/assets/crown-pink.png"
-                  className="w-5 h-auto my-5 "
-                  alt="crown-pink"
-                />
-                <p>No Risk, Just Profits</p>
-              </div>
+          <section className="2xl:mt-[25rem] mt-[30rem] grid flex-col justify-center items-center  2xl:block relative">
+            <div className="absolute left-[10rem] -top-[10rem] hidden xl:block">
+              <img src="/assets/phone-illustration.png" className="" alt="" />
             </div>
-            <div className="relative -top-[10rem] -right-[10rem]">
-              <div className=" number-morph w-9 flex items-center justify-center h-20">
-                <span>1</span>
-              </div>
-              <div className="number-morph w-10 rounded-full h-10 flex items-center justify-center mt-4">
-                <span>2</span>
-              </div>
-              <div className="number-morph w-10 rounded-full h-10 flex items-center justify-center mt-4">
-                <span>3</span>
-              </div>
-            </div>
-            <div className="flex justify-center relative -top-[32rem]">
-              <div className="backdrop 2xl:w-3/5 w-full h-1/4 mt-36 morph relative border-blue-800 z-10">
-                <img
-                  src="/assets/crown-blue.png"
-                  className="w-5 h-auto my-5"
-                  alt="blue-pink"
-                />
-                <p className="2xl:text-5xl space-grotesk font-medium text-secondary">
-                  Trading Evaluation
-                </p>
-                <p className="text-sm w-10/12 mt-8 pb-14 opacity-80 text-blue-300">
-                  Our evaluation account allows traders to prove their skill in
-                  order to trade our live funds.
-                </p>
-                <div className="absolute left-auto -right-20 bottom-5">
-                  <Button
-                    className="bg-[#3658C1] border-none lexend"
-                    text="get funded"
-                    showArrow={true}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="backdrop 2xl:w-1/3 mt-32 border-none bg-white absolute right-96 -top-[43rem] z-0 flex flex-col morph">
-                <img
-                  src="/assets/crown-pink.png"
-                  className="w-5 h-auto"
-                  alt="crown-pink"
-                />
-                <p className="py-5 lexend">High Profit Splits</p>
-                <p className="text-xs pt-7 w-4/5 lexend">
-                  Our profit split for the first month on all accounts is 80%.
-                  On the second month you will then receive 90% of all profits
-                  made!
-                </p>
-              </div>
-            </div>
+            <MainCarousel />
           </section>
-          <section className=" grid flex-col justify-center items-center mt-20 2xl:-mt-[10rem] ">
+          <section className=" grid flex-col justify-center items-center mt-[20rem]">
             <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
               Tailored Solutions to Amplify Your Trading Success
             </p>

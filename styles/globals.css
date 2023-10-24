@@ -106,7 +106,7 @@ body {
   @apply backdrop-blur-sm text-white border shadow-lg rounded-2xl border-slate-500 bg-blend-overlay;
 }
 .glassmorph {
-  @apply  backdrop-blur-sm w-full bg-white bg-opacity-5 text-white border border-slate-800 shadow-lg rounded-xl py-5 2xl:px-5 cursor-pointer;
+  @apply backdrop-blur-sm w-full bg-white bg-opacity-5 text-white border border-slate-800 shadow-lg rounded-xl py-5 2xl:px-5 cursor-pointer;
 }
 .bullet-point::before {
   content: "";
@@ -160,3 +160,59 @@ textarea {
   border: 1px solid red;
 }
 
+.cards {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card {
+  background: transparent;
+  padding: 1.5rem;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  animation: animate 15s infinite linear;
+  animation-delay: calc(3s * var(--delay));
+}
+.outer:hover .card {
+  animation-paly-state: paused;
+}
+.cards .card:last-child {
+  animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%,
+  20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%,
+  40% {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0%) scale(1);
+  }
+  45%,
+  60% {
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%,
+  100% {
+    opacity: 1;
+    transform: translateY(-100%) scale(0.7);
+  }
+}
