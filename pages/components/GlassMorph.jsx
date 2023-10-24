@@ -1,14 +1,26 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
 const GlassMorph = (props) => {
   const [counterOn, setCounterOn] = useState(false);
+
+  useEffect(() => {
+    if (counterOn) {
+      setCounterOn(true)
+    }
+  }, [counterOn]);
+
+  const handleScrollTrigger = () => {
+    if (!counterOn) {
+      setCounterOn(true);
+    }
+  };
+
   return (
     <ScrollTrigger
-      onEnter={() => setCounterOn(true)}
-      onExit={() => setCounterOn(false)}
+      onEnter={handleScrollTrigger}
     >
       <div className="glassmorph">
         <p className="space-grotesk text-4xl text-center font-semibold">
