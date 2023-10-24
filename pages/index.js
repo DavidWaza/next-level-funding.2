@@ -6,6 +6,7 @@ import PriceCard from "./components/PriceCard";
 import AccordionComponent from "./components/AccordionComponent";
 import Footer from "./components/Footer";
 import MarqueeComponent from "./components/MarqueeComponent";
+import { PriceLists, accordionContents } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -153,12 +154,21 @@ export default function Home() {
               Our Evaluation Packages
             </p>
             <div className="mt-10 grid grid-cols-1 2xl:grid-cols-3 gap-5 px-7">
-              <PriceCard />
-              <PriceCard />
-              <PriceCard />
+              {PriceLists.map((pricelist, index) => (
+                <div key={index}>
+                  <PriceCard
+                    packageNum={pricelist.pack}
+                    value={pricelist.value}
+                    listOne={pricelist.listOne}
+                    listTwo={pricelist.listTwo}
+                    listThree={pricelist.listThree}
+                    listFour={pricelist.listFour}
+                  />
+                </div>
+              ))}
             </div>
             <div className="mt-5 grid justify-center flex-col items-center w-full">
-              <div className="2xl:flex gap-5 block px-7">
+              {/* <div className="2xl:flex gap-5 block px-7">
                 <PriceCard
                   className="bg-[#3658c1]"
                   spanClassName="text-white"
@@ -167,7 +177,7 @@ export default function Home() {
                   className="bg-[#3658c1]"
                   spanClassName="text-white"
                 />
-              </div>
+              </div> */}
               <div className="2xl:flex block justify-center my-8">
                 <Button
                   className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
@@ -184,16 +194,14 @@ export default function Home() {
               Frequently asked questions
             </p>
             <div className="2xl:px-[10rem]">
-              <AccordionComponent
-                header="What is Nextlevelfunding?"
-                text="We are a company which provide capital to profitable traders. Prove you are profitable by completing the 2 step evaluation process then receive immediate funding up to $500k per person.
-"
-              />
-              <AccordionComponent
-                header="Will I Be Trading On A Demo Account Or A Live Account?"
-                text="We are a company which provide capital to profitable traders. Prove you are profitable by completing the 2 step evaluation process then receive immediate funding up to $500k per person.
-"
-              />
+              {accordionContents.map((content, index) => (
+                <div key={index}>
+                  <AccordionComponent
+                    header={content.title}
+                    text={content.text}
+                  />
+                </div>
+              ))}
             </div>
           </section>
           <section className="my-[10rem] relative hidden 2xl:block">

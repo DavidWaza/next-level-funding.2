@@ -6,7 +6,7 @@ const ResponsiveNavbar = () => {
   return (
     <div className="">
       <nav class="fixed w-full bg-white border-gray-200 dark:bg-[transparent] z-10">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class=" px-[5rem] flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" class="flex items-center">
             <img
               src="/assets/logo.png"
@@ -58,27 +58,26 @@ const ResponsiveNavbar = () => {
             </svg>
           </button>
           <div className=" hidden w-full md:block md:w-auto" id="navbar-default">
-            <div className="flex space-x-4 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-5 border-slate-500 bg-blend-overlay lexend">
+            <div className="flex space-x-7 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-10 border-slate-500 bg-blend-overlay lexend">
               <Link href="/about-us">About Us</Link>
               <Link href="/trading-rules">How Funding Works</Link>
               <Link href="#faq">FAQ</Link>
               <Link href="/contact-us">Help Center</Link>
             </div>
           </div>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <div className="hidden w-full md:block md:w-auto 2xl:flex gap-4" id="navbar-default">
             <Button
-              className="bg-[#3658C1] border-none lexend"
+              className=" border border-blue-700 lexend"
               text="Dashboard"
               showArrow={true}
             />
-          </div>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <Button
+             <Button
               className="bg-[#3658C1] border-none lexend"
               text="get funded"
               showArrow={true}
             />
           </div>
+          
         </div>
       </nav>
     </div>

@@ -15,6 +15,16 @@ const Footer = () => {
               <img src="/assets/mail.svg" className="w-5 h-auto " alt="" />
             </div>
           </div>
+          <div className="flex flex-col justify-center">
+            <p className="lexend mt-2 text-slate-400 ">
+              All information provided on this site is intended solely for the
+              study purposes related to trading on financial markets and does
+              not serve in any way as a specific investment recommendation,
+              business recommendation, investment opportunity analysis or
+              similar general recommendation regarding the trading of investment
+              instruments.
+            </p>
+          </div>
         </aside>
         <nav className="lexend">
           <header className="footer-title text-white">Useful Links</header>
@@ -22,7 +32,7 @@ const Footer = () => {
           <a className="link link-hover">Help Center</a>
           <a className="link link-hover">Terms of Service</a>
         </nav>
-        <nav className="mr-0 lexend">
+        <nav className="ml-10 lexend">
           <header className="footer-title text-white text">Legal</header>
           <a className="link link-hover">Privacy Policy</a>
           <a className="link link-hover">Return Policy</a>

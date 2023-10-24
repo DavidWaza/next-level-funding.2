@@ -17,7 +17,7 @@ const GlassMorph = (props) => {
             <CountUp
               start={props.start}
               end={props.end}
-              duration={10}
+              duration={1}
               delay={0}
             />
           )}
