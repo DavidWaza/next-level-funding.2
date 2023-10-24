@@ -1,10 +1,9 @@
 import React from "react";
 import TableComponent from "../components/TableComponent";
-import SwiperComponent from "../components/SwiperCarousel";
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 import Button from "../components/Button";
-import Testimonial from "../components/Testimonial";
-import CoverflowCarousel from "../components/CoverflowCarousel";
+// import Testimonial from "../components/Testimonial";
+// import CoverflowCarousel from "../components/CoverflowCarousel";
 import Footer from "../components/Footer";
 const AboutUs = () => {
   return (
