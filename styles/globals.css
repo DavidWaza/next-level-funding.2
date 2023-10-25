@@ -237,5 +237,6 @@ button:active {
   background-color: #991275;
 }
 button:focus {
-  background-color: #991275;
+  background-color: #fff;
+  color: black;
 }

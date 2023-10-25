@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Button from "./Button";
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
+  // const [navBackground, setNavBackground] = useState(false);
+
+  
 
   return (
-    <nav className="w-full">
+    <nav >
       <div
-        className={`justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent] ${
-          !navbar ? "fixed top-0 left-0 right-0" : "relative"
+        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent] ${
+          !navbar ? "" : "absolute"
         }`}
       >
         <div>
@@ -77,7 +80,7 @@ const NavBar = () => {
         </div>
         <div className="hidden space-x-2 lg:inline-block">
           <Button
-            className="bg-[#295cf7] border-none lexend"
+            className="bg-[#295cf7] border-none lexend hover:bg-blue-800"
             text="get funded"
             showArrow={true}
           />
