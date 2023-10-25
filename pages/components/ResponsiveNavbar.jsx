@@ -11,9 +11,9 @@ const ResponsiveNavbar = () => {
   };
 
   return (
-    <Container maxWidth='xl'>
-      <nav class=" fixed w-full z-20 top-0 left-0 dark:border-gray-600">
-        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-4">
+    <Container maxWidth="xl">
+      <nav class=" fixed w-full z-20 top-0 left-0 dark:border-gray-600 px-4">
+        <div class="max-w-screen-2xl w-full flex flex-wrap items-center justify-between mx-auto py-4">
           <Link href="/" class="flex items-center">
             <img
               src="/assets/logo.png"
@@ -21,13 +21,8 @@ const ResponsiveNavbar = () => {
               alt="Flowbite Logo"
             />
           </Link>
-          <div class="flex md:order-2 gap-9">
-            {/* <Button
-              className="border border-blue-700 lexend"
-              text="Dashboard"
-              showArrow={true}
-            /> */}
-           <Button
+          <div class=" flex md:order-2 gap-9">
+            <Button
               className="bg-[#295cf7] border-none lexend"
               text="get funded"
               showArrow={true}
@@ -35,9 +30,10 @@ const ResponsiveNavbar = () => {
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center z-0 p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="true"
+              onClick={toggleMenu}
             >
               <span class="sr-only">Open main menu</span>
               <svg
@@ -76,6 +72,16 @@ const ResponsiveNavbar = () => {
               </svg>
             </button>
           </div>
+            <div>
+              {isMenuOpen && (
+                <div className="flex flex-col items-center justify-center bg-slate-900 w-screen py-4 px-6 mt-4">
+                  <Link href="/about-us">About Us</Link>
+                  <Link href="/trading-rules">How Funding Works</Link>
+                  <Link href="/#faq">FAQ</Link>
+                  <Link href="/contact-us">Help Center</Link>
+                </div>
+              )}
+            </div>
           <div
             class="items-center justify-between hidden w-full xl:flex md:w-auto md:order-1"
             id="navbar-sticky"

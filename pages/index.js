@@ -9,6 +9,7 @@ import MarqueeComponent from "./components/MarqueeComponent";
 import { PriceLists, accordionContents } from "@/lib/data";
 import MainCarousel from "./components/MainCarousel";
 import { Container } from "@mui/material";
+import ResponsiveNavbar from "./components/ResponsiveNavbar";
 
 export default function Home() {
   return (
@@ -75,11 +76,11 @@ export default function Home() {
                 text="learn more"
               />
             </div>
-            <section className="2xl:mt-[25rem] my-[40rem] grid flex-col justify-center items-center  2xl:block relative">
-              <div className="absolute left-[10rem] -top-[10rem] hidden xl:block">
+            <section className=" grid flex-col justify-center items-center  2xl:block relative">
+              {/* <div className="absolute left-[10rem] -top-[10rem] hidden xl:block">
                 <img src="/assets/phone-illustration.png" className="" alt="" />
               </div>
-              <MainCarousel />
+              <MainCarousel /> */}
             </section>
             <section className=" grid flex-col justify-center items-center mt-[20rem]">
               <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
@@ -103,8 +104,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="mt-5 grid justify-center flex-col items-center w-full">
-                <div className="2xl:flex gap-5 block px-7">
+              <div className="mt-10 grid grid-cols-1 2xl:grid-cols-2 gap-5">
                   <PriceCard
                     className="bg-[#3658c1] price-card"
                     spanClassName="text-white"
@@ -127,13 +127,12 @@ export default function Home() {
                     listThree="12% PROFIT TARGET"
                     listFour="NO MINIMUM TRADING DAYS"
                   />
-                </div>
-                <div className="2xl:flex block justify-center my-8">
-                  <Button
-                    className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
-                    text="read trading rules"
-                  />
-                </div>
+              </div>
+              <div className="2xl:flex block justify-center my-8">
+                <Button
+                  className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
+                  text="read trading rules"
+                />
               </div>
             </section>
             <section className="mt-10" id="faq">
@@ -198,11 +197,8 @@ export default function Home() {
               </div>
             </section>
           </section>
-        </Container>
-
-        <section className="2xl:px-[7rem]">
           <Footer />
-        </section>
+        </Container>
       </div>
     </main>
   );

@@ -24,7 +24,7 @@ const AboutUs = () => {
       </div>
       <div className="home-bg">
         <div className=" flex-col justify-center items-center 2xl:px-[10rem]">
-          <section className="mt-[10rem] 2xl:px-[10rem]">
+          <section className=" 2xl:px-[10rem]">
             <div className="grid 2xl:grid-cols-2 grid-cols-none items-center py-20 gap-7 px-[5rem] 2xl:px-0">
               <div>
                 <img

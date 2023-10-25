@@ -1,22 +1,40 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <div className="mt-9">
-      <footer className="footer p-10 bg-[transparent]">
-        <aside>
-          <img src="/assets/logo.png" className="" alt="" />
-          <div className="flex gap-5 mt-6">
-            <div className="border-none border bg-slate-700 rounded-full p-3">
-              <img src="/assets/bulb.svg" className="w-5 h-auto " alt="" />
+      <footer class="">
+        <div class="mx-auto w-full p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+              <Link href="/" class="flex items-center">
+                <img src="/assets/logo.png" class="h-auto w-28" alt="" />
+              </Link>
             </div>
-            <div className="border-none border bg-slate-700 rounded-full p-3">
-              <img src="/assets/discord.svg" className="w-5 h-auto " alt="" />
-            </div>
-            <div className="border-none border bg-slate-700 rounded-full p-3">
-              <img src="/assets/mail.svg" className="w-5 h-auto " alt="" />
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-1">
+              <div>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium flex gap-8">
+                  <li class="mb-4">
+                    <Link href="/about-us" class="hover:underline">
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact-us" class="hover:underline">
+                      Help Center
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="" class="hover:underline">
+                      Terms of Service
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center">
-            <p className="lexend mt-2 text-slate-400 ">
+          <div className="py-7">
+            <p className="lexend text-slate-400">
               All information provided on this site is intended solely for the
               study purposes related to trading on financial markets and does
               not serve in any way as a specific investment recommendation,
@@ -25,19 +43,36 @@ const Footer = () => {
               instruments.
             </p>
           </div>
-        </aside>
-        <nav className="lexend">
-          <header className="footer-title text-white">Useful Links</header>
-          <a className="link link-hover">About Us</a>
-          <a className="link link-hover">Help Center</a>
-          <a className="link link-hover">Terms of Service</a>
-        </nav>
-        <nav className="ml-10 lexend">
-          <header className="footer-title text-white text">Legal</header>
-          <a className="link link-hover">Privacy Policy</a>
-          <a className="link link-hover">Return Policy</a>
-          <a className="link link-hover">Cookie policy</a>
-        </nav>
+
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <div>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium flex gap-8">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">
+                    Terms &amp; Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+              <div className="border-none border bg-slate-700 rounded-full p-3">
+                <img src="/assets/bulb.svg" className="w-5 h-auto " alt="" />
+              </div>
+              <div className="border-none border bg-slate-700 rounded-full p-3">
+                <img src="/assets/discord.svg" className="w-5 h-auto " alt="" />
+              </div>
+              <div className="border-none border bg-slate-700 rounded-full p-3">
+                <img src="/assets/mail.svg" className="w-5 h-auto " alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

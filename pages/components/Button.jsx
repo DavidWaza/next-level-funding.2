@@ -22,6 +22,7 @@ const Button = (props) => {
     <div>
       <button
         className={`border xl:px-6 rounded-full py-2 uppercase flex items-center gap-2 justify-center text-white text-sm px-2 hover:bg-blue-900 ${props.className}`}
+        onClick={() => console.log('click')}
       >
         {props.showArrow && buttonImage}
         {props.text}
