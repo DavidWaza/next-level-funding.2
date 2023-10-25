@@ -34,15 +34,15 @@ const Footer = () => {
         <div className="flex items-end w-full justify-center lg:justify-end gap-10">
           <nav className="flex flex-col justify-end lexend">
             <header className="text-white">Useful Links</header>
-            <a className="link link-hover">About Us</a>
-            <a className="link link-hover">Help center</a>
-            <a className="link link-hover">Terms of Service</a>
+            <Link href='/about-us' className="link link-hover">About Us</Link>
+            <Link href='/contact-us' className="link link-hover">Help center</Link>
+            <Link href='/terms-of-service' className="link link-hover">Terms of Service</Link>
           </nav>
           <nav className="flex flex-col lexend">
             <header className="text-white">Legal</header>
-            <a className="link link-hover">Privacy Policy</a>
-            <a className="link link-hover">Return Policy</a>
-            <a className="link link-hover">Cookie Policy</a>
+            <Link href="/privacy-policy" className="link link-hover">Privacy Policy</Link>
+            <Link href='/' className="link link-hover">Return Policy</Link>
+            <Link href='/cookie-policy' className="link link-hover">Cookie Policy</Link>
           </nav>
         </div>
       </footer>
