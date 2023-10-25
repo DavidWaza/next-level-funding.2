@@ -130,7 +130,7 @@ export default function Home() {
               </div>
               <div className="2xl:flex block justify-center my-8">
                 <Button
-                  className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
+                  className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 mx-auto"
                   text="read trading rules"
                 />
               </div>
