@@ -11,91 +11,96 @@ const ResponsiveNavbar = () => {
   };
 
   return (
-    <Container maxWidth="xl">
-      <nav class=" fixed w-full z-20 top-0 left-0 dark:border-gray-600 px-4">
-        <div class="max-w-screen-2xl w-full flex flex-wrap items-center justify-between mx-auto py-4">
-          <Link href="/" class="flex items-center">
-            <img
-              src="/assets/logo.png"
-              className="h-auto xl:w-44 w-28 px-4"
-              alt="Flowbite Logo"
-            />
-          </Link>
-          <div class=" flex md:order-2 gap-9">
-            <Button
-              className="bg-[#295cf7] border-none lexend"
-              text="get funded"
-              showArrow={true}
-            />
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center z-0 p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="true"
-              onClick={toggleMenu}
-            >
-              <span class="sr-only">Open main menu</span>
+    <>
+      <div className="navbar fixed top-0 right-0 left-0 2xl:px-[10rem]">
+        <div className="navbar-start  py-4">
+          <div className="dropdown">
+            <label tabIndex={0} className="btn btn-ghost hidden">
               <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <g id="menu-03">
-                  <path
-                    id="Vector"
-                    d="M13.3334 6.66666H26.6667"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    id="Vector_2"
-                    d="M5.33337 16H26.6667"
-                    stroke="#3658C1"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    id="Vector_3"
-                    d="M5.33337 25.3333H18.6667"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
-            </button>
-          </div>
-            <div>
-              {isMenuOpen && (
-                <div className="flex flex-col items-center justify-center bg-slate-900 w-screen py-4 px-6 mt-4">
-                  <Link href="/about-us">About Us</Link>
-                  <Link href="/trading-rules">How Funding Works</Link>
-                  <Link href="/#faq">FAQ</Link>
-                  <Link href="/contact-us">Help Center</Link>
-                </div>
-              )}
-            </div>
-          <div
-            class="items-center justify-between hidden w-full xl:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <div className="flex space-x-7 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-10 border-slate-500 bg-blend-overlay lexend">
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <Link href="/about-us">About Us</Link>
               <Link href="/trading-rules">How Funding Works</Link>
               <Link href="/#faq">FAQ</Link>
               <Link href="/contact-us">Help Center</Link>
-            </div>
+            </ul>
+          </div>
+          <Link href="/" className="btn btn-ghost normal-case text-xl">
+            <img
+              src="/assets/logo.png"
+              className="h-auto xl:w-44 w-28 px-4"
+              alt=""
+            />
+          </Link>
+        </div>
+        <div
+          class="items-center justify-between hidden xl:flex md:w-auto md:order-0"
+          id="navbar-sticky"
+        >
+          <div className=" w-[500px] text-center flex space-x-7 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-4 border-slate-500 bg-blend-overlay lexend">
+            <Link href="/about-us">About Us</Link>
+            <Link href="/trading-rules">How Funding Works</Link>
+            <Link href="/#faq">FAQ</Link>
+            <Link href="/contact-us">Help Center</Link>
           </div>
         </div>
-      </nav>
-    </Container>
+        <div className="navbar-end">
+          <div className="hidden 2xl:block">
+          <Button
+            className="bg-[#295cf7] border-none lexend"
+            text="get funded"
+            showArrow={true}
+          />
+          </div>
+          
+          <div className="2xl:hidden block">
+          <div className="dropdown">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 mr-[10rem]"
+            >
+              <Link href="/about-us">About Us</Link>
+              <Link href="/trading-rules">How Funding Works</Link>
+              <Link href="/#faq">FAQ</Link>
+              <Link href="/contact-us">Help Center</Link>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const PriceComponent = () => {
   return (
-    <div>
+    <div  className="px-[1.3rem]">
       <section className="grid flex-col justify-center items-center pt-[7rem]">
         <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
           Tailored Solutions to Amplify Your Trading Success
@@ -13,7 +13,7 @@ const PriceComponent = () => {
         <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center mt-3 px-3">
           Our Evaluation Packages
         </p>
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-20">
           {PriceLists.map((pricelist, index) => (
             <div key={index} className="price-card">
               <PriceCard
@@ -28,12 +28,12 @@ const PriceComponent = () => {
             </div>
           ))}
         </div>
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-20">
           <PriceCard
             className="bg-[#3658c1] price-card"
             spanClassName="text-white"
             packageNum="100k"
-            value="$ 600"
+            value="€600"
             valPrep="A $100,000 One Step Evaluation Account"
             listOne=" 5% DAILY DRAWDOWN"
             listTwo="12% OVERALL DRAWDOWN"
@@ -44,7 +44,7 @@ const PriceComponent = () => {
             className="bg-[#3658c1] price-card"
             spanClassName="text-white"
             packageNum="INSTANT FUNDING"
-            value="$ 575"
+            value="€575"
             valPrep="$50,000 Instant instant funding"
             listOne=" 5% DAILY DRAWDOWN"
             listTwo="12% OVERALL DRAWDOWN"

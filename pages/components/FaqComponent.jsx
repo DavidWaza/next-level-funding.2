@@ -4,7 +4,7 @@ import { accordionContents } from "@/lib/data";
 
 const FaqComponent = () => {
   return (
-    <div>
+    <div  className="px-[1.3rem]">
       <section className="mt-10" id="faq">
         <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
           To explore common issues

@@ -37,7 +37,7 @@ const AccordionComponent = (props) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography sx={{ color: "white" }} className="lexend">
+          <Typography sx={{ color: "white", fontSize: '18px' }} className="lexend">
             {props.header}
           </Typography>
         </AccordionSummary>
