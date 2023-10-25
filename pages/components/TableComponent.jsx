@@ -2,15 +2,15 @@ import React from "react";
 
 const TableComponent = () => {
   return (
-    <div className=" w-full  glass-morph-table">
+    <div className=" w-full glass-morph-table">
       <div className="flex flex-col">
         <div className="overflow-x-auto">
           <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-            <div className="overflow-hidden">
+            <div className="overflow-x-auto max-w-full">
               <table className="min-w-full text-center text-sm font-light">
                 <thead className="font-medium">
                   <tr className="lexend text-lg glass-morph-header">
-                    <th scope="col" className="px-6 py-4 text-left">
+                    <th scope="col" className="px-6 py-2 lg:py-4 text-left">
                       Variables
                     </th>
                     <th scope="col" className="px-6 py-4">

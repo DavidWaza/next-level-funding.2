@@ -240,3 +240,6 @@ button:focus {
   background-color: #fff;
   color: black;
 }
+ .navbar-slide-out {
+  transition: all .3s ease-in;
+ }
