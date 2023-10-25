@@ -11,8 +11,8 @@ const TermsOfService = () => {
           </p>
         </div>
         <div className="home-bg text-lg -mt-10 ">
-        <Container>
-        <div className="py-6">
+          <Container>
+            <div className="py-6">
               <p className="lexend bont-bold">
                 NextLevelFunding offers this website, including all information,
                 tools, and services available from this site to you, the user,
@@ -154,7 +154,7 @@ const TermsOfService = () => {
                 changes to our site.
               </p>
             </section>
-                
+
             <section className="font-extralight lexend py-5">
               <h3 className="font-bold">
                 Section 4 – Modifications to the Service and Prices
@@ -431,9 +431,8 @@ const TermsOfService = () => {
                 Service constitutes acceptance of those changes.
               </p>
             </section>
-        </Container>
+          </Container>
         </div>
-       
       </main>
     </div>
   );
