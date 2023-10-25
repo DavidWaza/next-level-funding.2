@@ -1,17 +1,53 @@
+import { useState } from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
+
 const AccordionComponent = (props) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleAccordion = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <div className="my-10">
-      <div className="collapse collapse-plus bg-[transparent] border border-slate-600">
-        <input type="radio" id={props.index} name="my-accordion-1" checked="checked" />
-        <div className="collapse-title text-xl font-medium lexend">
-          {props.header}
-        </div>
-        <div className="collapse-content">
-          <p className="text-sm lexend font-thin">{props.text}</p>
-        </div>
-      </div>
+    <div>
+      <Accordion
+        sx={{
+          marginTop: 3,
+          paddingTop: 2,
+          paddingBottom: 2,
+          backgroundColor: "transparent",
+        }}
+        className="border border-slate-600 rounded-xl"
+        onClick={toggleAccordion}
+      >
+        <AccordionSummary
+          expandIcon={
+            expanded ? (
+              <RemoveIcon sx={{ color: "white" }} />
+            ) : (
+              <AddIcon sx={{ color: "white" }} />
+            )
+          }
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography sx={{ color: "white" }} className="lexend">
+            {props.header}
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography sx={{ color: "white" }} className="lexend">
+            {props.text}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
 };
-
 export default AccordionComponent;
