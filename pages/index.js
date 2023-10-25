@@ -153,7 +153,7 @@ export default function Home() {
                 ))}
               </div>
             </section>
-            <section className="my-[10rem] relative hidden 2xl:block">
+            <section className="my-[10rem] relative  2xl:block">
               <img src="/assets/rec.svg" className="w-full h-auto " alt="" />
               <div className="absolute top-[10%] z-10 left-[4rem]">
                 <p className=" lexend uppercase text-slate-400  text-sm px-3 ">
