@@ -60,7 +60,6 @@ body {
 }
 /*  */
 
-
 /* TEXT */
 .text-primary {
   color: #fff;
@@ -211,23 +210,32 @@ textarea {
   /* height: 100vh; */
   width: 100%;
 }
-.box{
+.box {
   background-color: lightgreen;
   height: 300px;
   width: 100%;
 }
-.box h3{
+.box h3 {
   text-align: center;
   color: white;
 }
- .slick-slide div {
-  margin: 0 1rem  ;
- }
+.slick-slide div {
+  margin: 0 1rem;
+}
 
 .price-card {
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 .price-card:hover {
   transform: scale(1.05);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
+}
+button {
+  transition: all 0.3s ease in out;
+}
+button:active {
+  background-color: #991275;
+}
+button:focus {
+  background-color: #991275;
 }

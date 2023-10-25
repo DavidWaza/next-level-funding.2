@@ -15,14 +15,14 @@ const PriceCard = (props) => {
 
       <div className="grid text-start justify-center">
         <div className="">
-          <span className="tooltip tooltip-left" data-tip={props.listOne}>
+          <span className="tooltip tooltip-up" data-tip={props.listOne}>
             <p className="bullet-point uppercase mt-2 text-sm cursor-pointer">
               {props.listOne}
             </p>
           </span>
         </div>
         <div className="">
-          <span className="tooltip tooltip-left" data-tip={props.listTwo}>
+          <span className="tooltip tooltip-up" data-tip={props.listTwo}>
             <p className="bullet-point uppercase mt-2 text-sm">
               {props.listTwo}
             </p>
@@ -30,7 +30,7 @@ const PriceCard = (props) => {
         </div>
         <div className="">
           <span
-            className="tooltip tooltip-left  justify-center"
+            className="tooltip tooltip-up  justify-center"
             data-tip={props.listThree}
           >
             <p className="bullet-point uppercase mt-2 text-sm">
@@ -40,7 +40,7 @@ const PriceCard = (props) => {
         </div>
         <div className="">
           <span
-            className="tooltip tooltip-left  justify-center"
+            className="tooltip tooltip-up  justify-center"
             data-tip={props.listFour}
           >
             <p className="bullet-point uppercase mt-2 text-sm">

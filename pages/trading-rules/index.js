@@ -1,5 +1,6 @@
 import React from "react";
 import AccordionComponent from "../components/AccordionComponent";
+import Footer from "../components/Footer";
 const TradingRules = () => {
   return (
     <main className="w-full body-bg pt-[5rem] text-white 2xl:h-[70vh] h-full">
@@ -97,6 +98,7 @@ const TradingRules = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </main>
   );
 };

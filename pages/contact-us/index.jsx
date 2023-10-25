@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 const ContactUs = () => {
   return (
@@ -40,7 +41,6 @@ const ContactUs = () => {
                   Nextlevelfundingfx@gmail.com
                 </span>
               </div>
-           
             </div>
             <div className="grid grid-rows-3 gap-7">
               <input
@@ -62,13 +62,16 @@ const ContactUs = () => {
                 className="textarea textarea-bordered rounded-xl p-3 2xl:w-[30rem] w-full h-[10rem]"
                 placeholder="Bio"
               ></textarea>
+              <div className="flex justify-end">
+                <Button className="" text="Send message" />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <section className="2xl:px-[7rem]">
-          <Footer />
-        </section>
+        <Footer />
+      </section>
     </main>
   );
 };
