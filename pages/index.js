@@ -89,7 +89,7 @@ export default function Home() {
               <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center mt-3 px-3">
                 Our Evaluation Packages
               </p>
-              <div className="mt-10 grid grid-cols-1 2xl:grid-cols-3 gap-5">
+              <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
                 {PriceLists.map((pricelist, index) => (
                   <div key={index} className="price-card">
                     <PriceCard
@@ -104,7 +104,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="mt-10 grid grid-cols-1 2xl:grid-cols-2 gap-5">
+              <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
                   <PriceCard
                     className="bg-[#3658c1] price-card"
                     spanClassName="text-white"
@@ -153,8 +153,10 @@ export default function Home() {
                 ))}
               </div>
             </section>
-            <section className="my-[10rem] relative  2xl:block">
+            <section className="my-[10rem] 2xl:block">
+              <div className="relative">
               <img src="/assets/rec.svg" className="w-full h-auto " alt="" />
+             
               <div className="absolute top-[10%] z-10 left-[4rem]">
                 <p className=" lexend uppercase text-slate-400  text-sm px-3 ">
                   we would love to hear from you
@@ -166,7 +168,6 @@ export default function Home() {
                   <div className="border-none border bg-slate-700 rounded-full p-3">
                     <img src="/assets/bulb.svg" className="w-5 h-auto" alt="" />
                   </div>
-                
                   <div className="border-none border bg-slate-700 rounded-full p-3">
                     <img src="/assets/mail.svg" className="w-5 h-auto" alt="" />
                   </div>
@@ -189,6 +190,7 @@ export default function Home() {
                   alt=""
                 />
               </div>
+               </div>
             </section>
           </section>
           <Footer />

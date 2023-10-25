@@ -89,7 +89,7 @@ const ResponsiveNavbar = () => {
             <div className="flex space-x-7 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-10 border-slate-500 bg-blend-overlay lexend">
               <Link href="/about-us">About Us</Link>
               <Link href="/trading-rules">How Funding Works</Link>
-              <Link href="#faq">FAQ</Link>
+              <Link href="/#faq">FAQ</Link>
               <Link href="/contact-us">Help Center</Link>
             </div>
           </div>

@@ -40,7 +40,7 @@ const Hero = () => {
               <div className="flex xl:justify-end justify-center">
                 <img
                   src="/assets/laptop.gif"
-                  className="2xl:w-[30rem] w-[15rem] h-auto"
+                  className="lg:w-[30rem] w-[20rem] h-auto"
                   alt="trade-computer"
                 />
               </div>
