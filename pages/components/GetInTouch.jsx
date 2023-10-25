@@ -4,16 +4,15 @@ import Button from './Button'
 const GetInTouch = () => {
   return (
     <div>
-         <section className="my-[10rem] 2xl:block">
-              <div className="relative">
+         <section className="my-[10rem] hidden lg:block">
+              <div className="relative top-0">
               <img src="/assets/rec.svg" className="w-full h-auto " alt="" />
-             
-              <div className="absolute top-[10%] z-10 left-[4rem]">
+              <div className="absolute lg:top-[10%] z-10 left-[4%]">
                 <p className=" lexend uppercase text-slate-400  text-sm px-3 ">
                   we would love to hear from you
                 </p>
-                <p className="space-grotesk font-bold text-[3rem] ">
-                  Get in touch <br /> with us
+                <p className="space-grotesk font-bold text-[1.9rem] xl:text-[2.7rem]">
+                  Get in touch with us
                 </p>
                 <div className="flex gap-5 mt-6">
                   <div className="border-none border bg-slate-700 rounded-full p-3">
@@ -23,7 +22,7 @@ const GetInTouch = () => {
                     <img src="/assets/mail.svg" className="w-5 h-auto" alt="" />
                   </div>
                 </div>
-                <p className="w-1/2 mt-5 lexend font-thin">
+                <p className="lg:w-1/2 mt-5 lexend font-thin">
                   Have a question that wasn’t answered in our FAQs page ? Reach
                   out to us and we will be happy to answer your questions
                 </p>
@@ -34,14 +33,14 @@ const GetInTouch = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -top-[12rem]  right-0">
+              <div className="absolute bottom-[30%] left-[50%]">
                 <img
                   src="/assets/woman-sitting.svg"
                   className="w-3/4 h-auto"
                   alt=""
                 />
               </div>
-               </div>
+              </div>
             </section>
     </div>
   )

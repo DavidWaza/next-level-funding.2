@@ -6,7 +6,7 @@ import Button from "./Button";
 const PriceComponent = () => {
   return (
     <div>
-      <section className="grid flex-col justify-center items-center lg:pt-[10rem]">
+      <section className="grid flex-col justify-center items-center pt-[7rem]">
         <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
           Tailored Solutions to Amplify Your Trading Success
         </p>
