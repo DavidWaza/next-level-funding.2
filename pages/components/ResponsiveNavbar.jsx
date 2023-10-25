@@ -11,9 +11,7 @@ const NavBar = () => {
   return (
     <nav >
       <div
-        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent] ${
-          !navbar ? "" : "absolute"
-        }`}
+        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent]`}
       >
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
