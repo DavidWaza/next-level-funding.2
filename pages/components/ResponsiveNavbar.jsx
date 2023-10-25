@@ -66,7 +66,7 @@ const NavBar = () => {
             </div>
           </div>
           {navbar && (
-            <div className="flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black lexend">
+            <div className="navbar-slide-out flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black lexend">
               <Link href="/about-us">About Us</Link>
               <Link href="/trading-rules">How Funding Works</Link>
               <Link href="/#faq">FAQ</Link>
