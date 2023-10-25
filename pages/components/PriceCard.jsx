@@ -56,7 +56,7 @@ const PriceCard = (props) => {
           text="pay now"
         />
       </div>
-      <p className="text-white w-3/4 text-center m-auto mt-5">
+      <p className="text-white w-[84%] text-center m-auto mt-5">
         * Please check{" "}
         <span className={`text-blue-700 underline ${props.spanClassName}`}>
           Trading Rules
