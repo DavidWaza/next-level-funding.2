@@ -40,16 +40,7 @@ const ContactUs = () => {
                   Nextlevelfundingfx@gmail.com
                 </span>
               </div>
-              <div className="flex items-center 2xl:justify-start justify-center">
-                <img
-                  src="/assets/discord.svg"
-                  className="2xl:w-14 w-10 h-auto border-none border bg-slate-700 rounded-full p-3"
-                  alt=""
-                />
-                <span className="lexend font-bold 2xl:text-2xl text-lg ml-3">
-                  Discord channel
-                </span>
-              </div>
+           
             </div>
             <div className="grid grid-rows-3 gap-7">
               <input

@@ -166,13 +166,7 @@ export default function Home() {
                   <div className="border-none border bg-slate-700 rounded-full p-3">
                     <img src="/assets/bulb.svg" className="w-5 h-auto" alt="" />
                   </div>
-                  <div className="border-none border bg-slate-700 rounded-full p-3">
-                    <img
-                      src="/assets/discord.svg"
-                      className="w-5 h-auto "
-                      alt=""
-                    />
-                  </div>
+                
                   <div className="border-none border bg-slate-700 rounded-full p-3">
                     <img src="/assets/mail.svg" className="w-5 h-auto" alt="" />
                   </div>
