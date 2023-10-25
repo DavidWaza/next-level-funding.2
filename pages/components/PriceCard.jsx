@@ -21,14 +21,14 @@ const PriceCard = (props) => {
             </p>
           </span>
         </div>
-        <div className="">
+        <div>
           <span className="tooltip tooltip-up" data-tip={props.listTwo}>
             <p className="bullet-point uppercase mt-2 text-sm">
               {props.listTwo}
             </p>
           </span>
         </div>
-        <div className="">
+        <div>
           <span
             className="tooltip tooltip-up  justify-center"
             data-tip={props.listThree}
@@ -38,7 +38,7 @@ const PriceCard = (props) => {
             </p>
           </span>
         </div>
-        <div className="">
+        <div>
           <span
             className="tooltip tooltip-up  justify-center"
             data-tip={props.listFour}

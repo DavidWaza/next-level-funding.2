@@ -6,10 +6,8 @@ const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   // const [navBackground, setNavBackground] = useState(false);
 
-  
-
   return (
-    <nav >
+    <nav>
       <div
         className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent]`}
       >
@@ -68,7 +66,7 @@ const NavBar = () => {
             </div>
           </div>
           {navbar && (
-            <div className="flex flex-col justify-center items-center px-10 py-5 gap-6 lexend">
+            <div className="flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black lexend">
               <Link href="/about-us">About Us</Link>
               <Link href="/trading-rules">How Funding Works</Link>
               <Link href="/#faq">FAQ</Link>
