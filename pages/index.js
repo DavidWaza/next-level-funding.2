@@ -7,6 +7,7 @@ import PriceComponent from "./components/PriceComponent";
 import FaqComponent from "./components/FaqComponent";
 import FundingBenefits from "./components/FundingBenefits";
 import TradePotential from "./components/TradePotential";
+import Coverflow from "./components/Coverflow";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="home-bg text-white">
         <Container>
           <TradePotential />
+          <Coverflow />
           <FundingBenefits />
           <PriceComponent />
           <FaqComponent />
