@@ -36,13 +36,17 @@ const Footer = () => {
             <header className="text-white">Useful Links</header>
             <Link href='/about-us' className="link link-hover">About Us</Link>
             <Link href='/contact-us' className="link link-hover">Help center</Link>
-            <Link href='/terms-of-service' className="link link-hover">Terms of Service</Link>
+            <Link href='/trading rules' className="link link-hover">Trading Rules</Link>
+            <Link href='/#faq' className="link link-hover">FAQ</Link>
+
+
           </nav>
           <nav className="flex flex-col lexend">
             <header className="text-white">Legal</header>
-            <Link href="/privacy-policy" className="link link-hover">Privacy Policy</Link>
-            <Link href='/' className="link link-hover">Return Policy</Link>
             <Link href='/cookie-policy' className="link link-hover">Cookie Policy</Link>
+            <Link href="/privacy-policy" className="link link-hover">Privacy Policy</Link>
+            <Link href='/refund-policy' className="link link-hover">Refund Policy</Link>
+            <Link href='/terms-of-service' className="link link-hover">Terms of Service</Link>
           </nav>
         </div>
       </footer>

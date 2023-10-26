@@ -1,18 +1,19 @@
 import React from "react";
 import { Container } from "@mui/material";
+import Footer from "../components/Footer";
 
 const TermsOfService = () => {
   return (
     <div>
-      <main className="w-full body-bg pt-[5rem] text-white 2xl:h-[30vh] h-full">
+      <main className="w-full body-bg pt-[4rem] text-white 2xl:h-[50vh] h-full">
         <div className="grid items-center justify-center py-[5rem]">
           <p className="space-grotesk font-bold text-[3rem] text-center">
             Terms of Service
           </p>
         </div>
-        <div className="home-bg text-lg -mt-10 ">
+        <div className="home-bg text-lg -mt-[2rem] py-20">
           <Container>
-            <div className="py-6">
+            <div className="">
               <p className="lexend bont-bold">
                 NextLevelFunding offers this website, including all information,
                 tools, and services available from this site to you, the user,
@@ -433,6 +434,7 @@ const TermsOfService = () => {
             </section>
           </Container>
         </div>
+          <Footer />
       </main>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 const PriceCard = (props) => {
   return (
@@ -59,7 +60,10 @@ const PriceCard = (props) => {
       <p className="text-white w-[84%] text-center m-auto mt-5">
         * Please check{" "}
         <span className={`text-blue-700 underline ${props.spanClassName}`}>
+          <Link href='/trading-rules'>
+            
           Trading Rules
+          </Link>
         </span>{" "}
         page for more info *
       </p>

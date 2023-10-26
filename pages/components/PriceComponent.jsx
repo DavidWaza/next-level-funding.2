@@ -2,10 +2,11 @@ import React from "react";
 import PriceCard from "./PriceCard";
 import { PriceLists } from "@/lib/data";
 import Button from "./Button";
+import Link from "next/link";
 
 const PriceComponent = () => {
   return (
-    <div  className="px-[1.3rem]">
+    <div  className="px-[1.3rem]" id="evaluation-package">
       <section className="grid flex-col justify-center items-center pt-[7rem]">
         <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
           Tailored Solutions to Amplify Your Trading Success
@@ -53,10 +54,13 @@ const PriceComponent = () => {
           />
         </div>
         <div className="2xl:flex block justify-center my-8">
+          <Link href="/trading-rules">
           <Button
             className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 mx-auto"
             text="read trading rules"
           />
+          </Link>
+         
         </div>
       </section>
     </div>

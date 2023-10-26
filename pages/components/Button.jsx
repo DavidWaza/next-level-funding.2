@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const buttonImage = (
@@ -20,13 +21,13 @@ const buttonImage = (
 const Button = (props) => {
   return (
     <div>
-      <button
-        className={`border xl:px-6 rounded-full py-2 px-10 uppercase flex items-center gap-2 justify-center text-white text-sm  ${props.className}`}
-        onClick={() => console.log('click')}
-      >
-        {props.showArrow && buttonImage}
-        {props.text}
-      </button>
+        <button
+          className={`border xl:px-6 rounded-full py-2 px-10 uppercase flex items-center gap-2 justify-center text-white text-sm  ${props.className}`}
+          onClick={() => console.log("click")}
+        >
+          {props.showArrow && buttonImage}
+          {props.text}
+        </button>
     </div>
   );
 };

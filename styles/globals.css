@@ -221,3 +221,29 @@ button:focus {
  .navbar-slide-out {
   transition: all .3s ease-in;
  }
+
+ /* SCROLL TO TOP */
+ .launch {
+  position: relative;
+}
+
+.iconPosition {
+  position: fixed;
+  top: 87%;
+  left: 90%;
+  z-index: 20;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+.iconPosition:hover {
+  animation: none;
+}
+
+
+.loaderGif{
+  position: absolute;
+  left: 40%;
+  transform: translate(0%, 70%);
+}

@@ -5,6 +5,7 @@ import MarqueeComponent from "./MarqueeComponent";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/material";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -25,15 +26,19 @@ const Hero = () => {
                 Leading Proprietary Trading Firm
               </p>
               <div className="md:flex grid gap-3 mt-14 justify-center lg:justify-start">
-                <Button
-                  className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
-                  text="learn more"
-                />
-                <Button
-                  className="backdrop-filter bg-[#991275] border-none "
-                  text="get started"
-                  showArrow={true}
-                />
+                <Link href="/about-us">
+                  <Button
+                    className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
+                    text="learn more"
+                  />
+                </Link>
+                <Link href="/#evaluation-package">
+                  <Button
+                    className="backdrop-filter bg-[#991275] border-none "
+                    text="get started"
+                    showArrow={true}
+                  />
+                </Link>
               </div>
             </Grid>
             <Grid item xs={12} md={6} lg={6}>
@@ -46,8 +51,8 @@ const Hero = () => {
               </div>
             </Grid>
           </Grid>
-          <Box sx={{paddingTop: 10, paddingBottom: 10}}>
-          <MarqueeComponent />
+          <Box sx={{ paddingTop: 10, paddingBottom: 10 }}>
+            <MarqueeComponent />
           </Box>
         </Box>
       </Container>
