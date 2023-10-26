@@ -8,8 +8,8 @@ import { Container } from "@mui/material";
 
 const Hero = () => {
   return (
-    <div className="home-bg">
-      <Container maxWidth="xl">
+    <div className="home-bg w-full">
+      <Container>
         <Box sx={{ paddingTop: 20, flexGrow: 1 }}>
           <Grid container spacing={5}>
             <Grid item xs={12} md={6} lg={6}>

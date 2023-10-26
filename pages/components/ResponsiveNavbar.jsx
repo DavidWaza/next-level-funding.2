@@ -1,15 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Button from "./Button";
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
-  // const [navBackground, setNavBackground] = useState(false);
+  const navRef = useRef(null);
+
+  const toggleNavbar = () => {
+    setNavbar(!navbar);
+  };
+
+
 
   return (
     <nav>
       <div
-        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent]`}
+        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent] fixed right-0 left-0 z-20`}
       >
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
@@ -19,7 +25,7 @@ const NavBar = () => {
             <div className="lg:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border bg-white"
-                onClick={() => setNavbar(!navbar)}
+                onClick={toggleNavbar}
               >
                 {navbar ? (
                   <svg
@@ -58,19 +64,27 @@ const NavBar = () => {
           <div
             className={`flex-1 hidden justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0`}
           >
-            <div className="w-[500px]  text-center flex space-x-7 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-4 border-slate-500 bg-blend-overlay lexend">
+            <div className=" text-center flex space-x-7 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-10 border-slate-500 bg-blend-overlay lexend">
               <Link href="/about-us">About Us</Link>
-              <Link href="/trading-rules">How Funding Works</Link>
+              <Link href="/trading-rules">Trading Rules</Link>
               <Link href="/#faq">FAQ</Link>
               <Link href="/contact-us">Help Center</Link>
             </div>
           </div>
           {navbar && (
-            <div className="navbar-slide-out flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black text-white lexend">
-              <Link href="/about-us">About Us</Link>
-              <Link href="/trading-rules">How Funding Works</Link>
-              <Link href="/#faq">FAQ</Link>
-              <Link href="/contact-us">Help Center</Link>
+            <div className="relative">
+                <div className="h-screen w-full absolute left-0 top-0" onClick={toggleNavbar}></div>
+              <div className="navbar-slide-out z-30 flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black text-white relative lexend ">
+                <Link href="/about-us">About Us</Link>
+                <Link href="/trading-rules">How Funding Works</Link>
+                <Link href="/#faq">FAQ</Link>
+                <Link href="/contact-us">Help Center</Link>
+                <Button
+                  className="bg-[#295cf7] border-none lexend hover:bg-blue-800"
+                  text="get funded"
+                  showArrow={true}
+                />
+              </div>
             </div>
           )}
         </div>

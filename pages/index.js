@@ -13,7 +13,7 @@ export default function Home() {
     <main className="h-full">
       <Hero />
       <div className="home-bg text-white">
-        <Container maxWidth="xl">
+        <Container>
           <TradePotential />
           <FundingBenefits />
           <PriceComponent />
