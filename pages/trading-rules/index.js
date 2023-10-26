@@ -11,10 +11,6 @@ const TradingRules = () => {
         <p className="space-grotesk font-bold text-[3rem] text-center">
           Trading Rules
         </p>
-        <p className="w-3/4 lexend text-center m-auto font-extralight">
-          Passionate about solving problems through creative communications.
-          Offering straight forward solutions
-        </p>
       </div>
       <div className="home-bg py-[10rem] 2xl:px-[20rem] px-[2rem]">
         <section>
@@ -59,13 +55,13 @@ const TradingRules = () => {
 
               For example if you are taking a trade at 0.5% then your next trade is at 2% this is not consistent. Your trades need to be similar risk by +\-0.5%. So if you open a trade at 0.5% risk it is ok on your next trade to risk 1%. Another example , if you open a trade at 1% risk it is then ok to take your next trade at 0.5% or 1.5%. The reason for this rule is it stops people gambling. Most traders can take one trade and get lucky this is not what we are looking for , we are looking for profitable traders that can properly manage risk.
               
-              Also as part of our consistency rule one trade cannot be over 50% of your total profit. For example if you have a 100k account and you take 5 trades :
-              
+              Also as part of our consistency rule one trade cannot be over 50% of your total profit. For example if you have a 100k account and you take 5 trades:
+            
               Trade 1 = 200$ profit
-              Trade 2 =400$ profit
-              Trade 3= 275$ profit
-              Trade 4= 600$ profit
-              Trade 5= 5000$ profit
+              Trade 2 = 400$ profit
+              Trade 3 = 275$ profit
+              Trade 4 = 600$ profit
+              Trade 5 = 5000$ profit
               
               This also is not consistent and inconsistent trades will be deducted from your total payout. You can take as long as you want to reach these 5 minimum trading days also. We find these rules fair as we allow you to use the HFT algo to pass our challenge and in return we Expect that you follow a set of rules to prove you are not just gambling your way through your account.`}
             />

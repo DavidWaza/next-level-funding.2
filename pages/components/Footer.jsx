@@ -57,7 +57,7 @@ const Footer = () => {
       <div className="h-[0.5px] opacity-80 bg-white my-8 mx-4 md:mx-24" />
 
       <p className="mx-4 text-white text-center my-8 lexend text-[12px] lg:text-sm">
-        2023 © - Next Level Funding - Powered by Waza & Mills{" "}
+        2023 © - Next Level Funding - Powered by OTB Solutions{" "}
       </p>
       <div className="flex gap-5 py-6 justify-center lg:hidden">
         <div className="border-none border bg-slate-700 rounded-full p-3">

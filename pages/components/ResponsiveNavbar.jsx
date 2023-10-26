@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <nav>
       <div
-        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-[transparent] fixed right-0 left-0 z-20`}
+        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-black fixed right-0 left-0 z-20`}
       >
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
@@ -64,7 +64,7 @@ const NavBar = () => {
           <div
             className={`flex-1 hidden justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0`}
           >
-            <div className=" text-center flex space-x-7 text-white backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-10 border-slate-500 bg-blend-overlay lexend">
+            <div className=" text-center flex space-x-7 text-white backdrop-filter bg-black backdrop-blur-lg bg-opacity-30 border rounded-full py-2 px-10 border-slate-500 bg-blend-overlay lexend">
               <Link href="/about-us">About Us</Link>
               <Link href="/trading-rules">Trading Rules</Link>
               <Link href="/#faq">FAQ</Link>

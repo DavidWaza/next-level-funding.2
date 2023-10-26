@@ -42,7 +42,7 @@ const AccordionComponent = (props) => {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography sx={{ color: "white" }} className="lexend">
+          <Typography sx={{ color: "white" }} className="lexend text-sm font-extralight">
             {props.text}
           </Typography>
         </AccordionDetails>
