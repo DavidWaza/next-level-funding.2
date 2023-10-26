@@ -1,20 +1,66 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import ResponsiveNavbar from "./components/ResponsiveNavbar";
-import Footer from "./components/Footer";
+import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charset="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          async
         />
       </Head>
       <body>
         <Main />
         <NextScript />
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright">
+            <a
+              href="https://www.tradingview.com/"
+              rel="noopener nofollow"
+              target="_blank"
+            >
+              <span class="blue-text">Track all markets on TradingView</span>
+            </a>
+          </div>
+          <Script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+            async
+            id="taper"
+          >
+            {`{ 
+            symbols: [
+              {
+                proName: "FOREXCOM:SPXUSD",
+                title: "S&P 500",
+              },
+              {
+                proName: "FOREXCOM:NSXUSD",
+                title: "US 100",
+              },
+              {
+                proName: "FX_IDC:EURUSD",
+                title: "EUR to USD",
+              },
+              {
+                proName: "BITSTAMP:BTCUSD",
+                title: "Bitcoin",
+              },
+              {
+                proName: "BITSTAMP:ETHUSD",
+                title: "Ethereum",
+              },
+            ],
+            showSymbolLogo: true,
+            colorTheme: "light",
+            isTransparent: false,
+            displayMode: "adaptive",
+            locale: "en",
+          }`}
+          </Script>
+        </div>
       </body>
     </Html>
   );

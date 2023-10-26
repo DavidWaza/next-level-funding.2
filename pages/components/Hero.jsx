@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
-import MarqueeComponent from "./MarqueeComponent";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/material";
 import Link from "next/link";
+import TradingViewWidget from "./TradingViewWidget";
 
 const Hero = () => {
   return (
@@ -52,7 +52,7 @@ const Hero = () => {
             </Grid>
           </Grid>
           <Box sx={{ paddingTop: 10, paddingBottom: 10 }}>
-            <MarqueeComponent />
+            <TradingViewWidget />
           </Box>
         </Box>
       </Container>
