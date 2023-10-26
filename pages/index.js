@@ -19,8 +19,8 @@ export default function Home() {
           <PriceComponent />
           <FaqComponent />
           <GetInTouch />
-          <Footer />
         </Container>
+          <Footer />
       </div>
     </main>
   );
