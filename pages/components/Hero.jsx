@@ -17,7 +17,7 @@ const Hero = () => {
             <p className="text-white space-grotesk font-bold text-[1.8rem] text-center md:text-[4rem] lg:text-left">
               Our Capital, Our Risk, Your Knowledge.
             </p>
-            <div className=" lg:w-[30rem] m-auto lg:ml-0">
+            <div className="md:w-[30rem] m-auto lg:ml-0">
             <p className="text-sm xl:text-lg tracking-wide md:text-left text-center font-light lexend text-white 2xl:w-[35rem] mt-1">
               With our program, you can get funded up to £1,000,000 with up to a
               90% profit split. Unlock Your Trading Potential with Our Leading
