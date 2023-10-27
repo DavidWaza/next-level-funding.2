@@ -10,19 +10,22 @@ const Hero = () => {
     <div className="home-bg w-full px-4 lg:px-[12rem] pt-20">
       <Box sx={{ paddingTop: 20, flexGrow: 1 }}>
         <Grid container spacing={5}>
-          <Grid item xs={12} md={6} lg={6}>
-            <p className="uppercase text-[#537DFF] text-2xl lg:text-xl lg:text-left font-bold lexend text-center">
+          <Grid item xs={12} md={12} lg={6}>
+            <p className="uppercase text-blue-500 font-bold lexend text-lg text-center lg:text-left md:px-10 lg:px-0">
               Next level funding
             </p>
-            <p className="py-3 lg:text-[4rem] text-[27px] font-bold space-grotesk text-center lg:text-left text-white">
+            <p className="text-white space-grotesk font-bold text-[1.8rem] text-center md:text-[4rem] lg:text-left">
               Our Capital, Our Risk, Your Knowledge.
             </p>
-            <p className="text-sm xl:text-lg tracking-wide lg:text-left text-center font-light lexend text-white 2xl:w-[35rem] mt-1">
+            <div className=" lg:w-[30rem] m-auto lg:ml-0">
+            <p className="text-sm xl:text-lg tracking-wide md:text-left text-center font-light lexend text-white 2xl:w-[35rem] mt-1">
               With our program, you can get funded up to £1,000,000 with up to a
               90% profit split. Unlock Your Trading Potential with Our Leading
-              Proprietary Trading Firm
+              Proprietary Trading Firm.
             </p>
-            <div className="md:flex grid gap-3 mt-14 justify-center lg:justify-start">
+            </div>
+            
+            <div className="lg:flex gap-4 mt-7 grid justify-center lg:justify-start">
               <Link href="/about-us">
                 <Button
                   className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 border border-slate-500 w-full"
@@ -31,14 +34,14 @@ const Hero = () => {
               </Link>
               <Link href="/#evaluation-package">
                 <Button
-                  className="backdrop-filter bg-[#991275] border-none "
+                  className="backdrop-filter bg-[#991275] border-none  lg:flex-1"
                   text="get started"
                   showArrow={true}
                 />
               </Link>
             </div>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={12} lg={6}>
             <div className="flex xl:justify-end justify-center">
               <img
                 src="/assets/laptop.gif"
