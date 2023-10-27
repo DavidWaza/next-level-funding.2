@@ -22,7 +22,7 @@ const Button = (props) => {
   return (
     <div>
         <button
-          className={`border xl:px-6 rounded-full py-2 px-5 uppercase flex items-center gap-2 justify-center text-white text-sm  ${props.className}`}
+          className={`border xl:px-4 rounded-full py-2 uppercase flex items-center gap-2 justify-center text-white  ${props.className}`}
           onClick={() => console.log("click")}
         >
           {props.showArrow && buttonImage}

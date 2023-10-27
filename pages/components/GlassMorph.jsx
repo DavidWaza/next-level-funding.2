@@ -22,7 +22,7 @@ const GlassMorph = (props) => {
     <ScrollTrigger
       onEnter={handleScrollTrigger}
     >
-      <div className="glassmorph">
+      <div className="glassmorph w-full">
         <p className="space-grotesk text-4xl text-center font-semibold">
           <span>{props.prefix}</span>
           {counterOn && (

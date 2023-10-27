@@ -14,7 +14,6 @@ export default function Home() {
     <main className="h-full">
       <Hero />
       <div className="home-bg text-white">
-        <Container>
           <TradePotential />
           <Coverflow />
           <FundingBenefits />
@@ -22,7 +21,6 @@ export default function Home() {
           <FaqComponent />
           <GetInTouch />
           <Footer />
-        </Container>
       </div>
     </main>
   );

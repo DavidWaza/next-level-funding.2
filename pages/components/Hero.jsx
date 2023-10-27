@@ -7,15 +7,15 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="home-bg w-full px-4 lg:px-[12rem] pt-20">
+    <div className="home-bg w-full px-4 lg:px-[12rem] pt-20 lg:h-[70vh]">
       <Box sx={{ paddingTop: 20, flexGrow: 1 }}>
         <Grid container spacing={5}>
           <Grid item xs={12} md={12} lg={6}>
-            <p className="uppercase text-blue-500 font-bold lexend text-lg text-center lg:text-left md:px-10 lg:px-0">
+            <p className="uppercase text-blue-500 font-bold lexend text-lg text-center lg:text-left md:px-10 lg:px-0 my-2">
               Next level funding
             </p>
-            <p className="text-white space-grotesk font-bold text-[1.8rem] text-center md:text-[4rem] lg:text-left md:leading-[63px] leading-[39px]">
-              Our Capital, Our Risk, Your Knowledge.
+            <p className="text-white space-grotesk font-bold text-[1.8rem] text-center lg:text-[4.5rem] lg:text-left md:leading-[73px] leading-[39px]">
+              Our Capital, Our Risk, <span className="text-blue-500">Your Knowledge.</span>
             </p>
             <div className="md:w-[30rem] m-auto lg:ml-0">
             <p className="text-sm xl:text-lg tracking-wide md:text-left text-center font-light lexend text-white 2xl:w-[35rem] mt-1 ">

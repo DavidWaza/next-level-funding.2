@@ -10,9 +10,9 @@ const CarouselCard = (props) => {
       <p className="lexend text-xlfont-thin">{props.text}</p>
       <div className="absolute 2xl:-right-20 pt-10 pb-5">
         <Button
-          className="bg-[#3658C1] border-none lexend"
+          className="bg-[#3658C1] border-none px-3 text-[12px] lexend"
           text="get funded"
-          showArrow={true}
+          showArrow={false}
         />
       </div>
     </div>

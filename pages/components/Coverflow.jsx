@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import GlassMorphCard from "./GlassMorphCard";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination,  Autoplay } from "swiper/modules";
 import "swiper/css";
 const Coverflow = () => {
   return (
@@ -13,6 +13,10 @@ const Coverflow = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
@@ -22,8 +26,9 @@ const Coverflow = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay,]}
         className="mySwiper"
+        initialSlide={1}
       >
         <SwiperSlide>
           <CarouselCard
@@ -47,14 +52,6 @@ const Coverflow = () => {
             text="Our evaluation account allows traders to prove their skill in order to trade our live funds."
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            img="/assets/crown-pink.svg"
-            title="Trading Evaluation at its best"
-            text="Our evaluation account allows traders to prove their skill in order to trade our live funds."
-          />
-        </SwiperSlide>
-       
       </Swiper>
     </div>
   );
