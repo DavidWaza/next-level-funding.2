@@ -47,6 +47,14 @@ const Coverflow = () => {
             text="Our evaluation account allows traders to prove their skill in order to trade our live funds."
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <CarouselCard
+            img="/assets/crown-pink.svg"
+            title="Trading Evaluation at its best"
+            text="Our evaluation account allows traders to prove their skill in order to trade our live funds."
+          />
+        </SwiperSlide>
+       
       </Swiper>
     </div>
   );

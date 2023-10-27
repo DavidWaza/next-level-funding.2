@@ -21,8 +21,8 @@ export default function Home() {
           <PriceComponent />
           <FaqComponent />
           <GetInTouch />
-        </Container>
           <Footer />
+        </Container>
       </div>
     </main>
   );
