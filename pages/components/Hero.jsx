@@ -14,11 +14,11 @@ const Hero = () => {
             <p className="uppercase text-blue-500 font-bold lexend text-lg text-center lg:text-left md:px-10 lg:px-0">
               Next level funding
             </p>
-            <p className="text-white space-grotesk font-bold text-[1.8rem] text-center md:text-[4rem] lg:text-left">
+            <p className="text-white space-grotesk font-bold text-[1.8rem] text-center md:text-[4rem] lg:text-left md:leading-[63px] leading-[39px]">
               Our Capital, Our Risk, Your Knowledge.
             </p>
             <div className="md:w-[30rem] m-auto lg:ml-0">
-            <p className="text-sm xl:text-lg tracking-wide md:text-left text-center font-light lexend text-white 2xl:w-[35rem] mt-1">
+            <p className="text-sm xl:text-lg tracking-wide md:text-left text-center font-light lexend text-white 2xl:w-[35rem] mt-1 ">
               With our program, you can get funded up to £1,000,000 with up to a
               90% profit split. Unlock Your Trading Potential with Our Leading
               Proprietary Trading Firm.
