@@ -13,17 +13,14 @@ const NavBar = () => {
   };
 
   const handleNavigation = () => {
-    // Close the navbar if it is open.
     if (navbar) {
       setNavbar(false);
     }
   };
 
   useEffect(() => {
-    // Listen for navigation events.
     window.addEventListener("popstate", handleNavigation);
 
-    // Remove the event listener when the component is unmounted.
     return () => {
       window.removeEventListener("popstate", handleNavigation);
     };

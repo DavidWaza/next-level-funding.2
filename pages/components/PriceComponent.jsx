@@ -1,6 +1,6 @@
 import React from "react";
 import PriceCard from "./PriceCard";
-import { PriceLists } from "@/lib/data";
+import { PriceLists, bluePriceList } from "@/lib/data";
 import Button from "./Button";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ const PriceComponent = () => {
         </p>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-8">
           {PriceLists.map((pricelist, index) => (
-            <div key={index} className="price-card">
+            <div key={index} className=" ">
               <PriceCard
                 packageNum={pricelist.pack}
                 value={pricelist.value}
@@ -26,6 +26,22 @@ const PriceComponent = () => {
                 listThree={pricelist.listThree}
                 listFour={pricelist.listFour}
                 link={pricelist.link}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="lg:flex justify-center gap-8">
+          {bluePriceList.map((list, index) => (
+            <div key={index} className="mt-10">
+              <PriceCard
+                packageNum={list.pack}
+                value={list.value}
+                valPrep={list.valPrep}
+                listOne={list.listOne}
+                listTwo={list.listTwo}
+                listThree={list.listThree}
+                listFour={list.listFour}
+                link={list.link}
               />
             </div>
           ))}
