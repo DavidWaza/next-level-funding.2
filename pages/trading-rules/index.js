@@ -3,7 +3,7 @@ import AccordionComponent from "../components/AccordionComponent";
 import Footer from "../components/Footer";
 const TradingRules = () => {
   return (
-    <main className="w-full body-bg pt-[5rem] text-white 2xl:h-[70vh] h-full">
+    <main className="w-full body-bg pt-[5rem] text-white h-full">
       <div className=" grid items-center justify-center py-[5rem]">
         <p className=" lexend uppercase text-slate-400  text-sm px-3 mt-[6rem] text-center">
           next level funding
