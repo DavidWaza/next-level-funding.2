@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const CookiePolicy = () => {
   return (
     <div>
-      <main className="w-full body-bg pt-[5rem] text-white 2xl:h-[40vh] h-full">
+      <main className="w-full body-bg pt-[5rem] text-white">
         <div className="grid items-center justify-center py-[5rem]">
           <p className="space-grotesk font-bold text-[3rem] text-center">
             Cookie Policy
