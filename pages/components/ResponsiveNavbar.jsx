@@ -5,6 +5,7 @@ import { Container } from "@mui/material";
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef(null);
 
   const toggleNavbar = () => {
@@ -28,10 +29,24 @@ const NavBar = () => {
     };
   }, [navbar]);
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    });
+  }, []);
+
   return (
     <nav>
       <div
-        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-black fixed right-0 left-0 z-50`}
+        className={` justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex fixed right-0 left-0 z-50 ${
+          isScrolled ? "bg-black" : ""
+        }`}
       >
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
@@ -94,10 +109,18 @@ const NavBar = () => {
                 onClick={toggleNavbar}
               ></div>
               <div className="navbar-slide-out z-30 flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black text-white relative lexend ">
-                <Link href="/about-us" onClick={toggleNavbar}>About Us</Link>
-                <Link href="/trading-rules" onClick={toggleNavbar}>Trading Rules</Link>
-                <Link href="/#faq" onClick={toggleNavbar}>FAQ</Link>
-                <Link href="/contact-us" onClick={toggleNavbar}>Help Center</Link>
+                <Link href="/about-us" onClick={toggleNavbar}>
+                  About Us
+                </Link>
+                <Link href="/trading-rules" onClick={toggleNavbar}>
+                  Trading Rules
+                </Link>
+                <Link href="/#faq" onClick={toggleNavbar}>
+                  FAQ
+                </Link>
+                <Link href="/contact-us" onClick={toggleNavbar}>
+                  Help Center
+                </Link>
                 <Button
                   className="bg-[#295cf7] border-none lexend hover:bg-blue-800"
                   text="get funded"
