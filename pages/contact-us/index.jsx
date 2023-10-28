@@ -9,7 +9,7 @@ const ContactUs = () => {
         <p className=" lexend uppercase text-slate-400  text-sm px-3 mt-[6rem] text-center">
           we would love to hear from you
         </p>
-        <p className="space-grotesk font-bold text-[3rem] text-center">
+        <p className="space-grotesk font-bold text-[2rem] lg:text-[3rem] text-center">
           Online Assistant Portal
         </p>
         <p className="w-3/4 lexend text-center m-auto font-extralight">
@@ -28,7 +28,7 @@ const ContactUs = () => {
                   alt=""
                 />
                 <span className="lexend font-bold 2xl:text-2xl text-lg ml-3">
-                  +234 9023456
+                +35385857806345
                 </span>
               </div>
               <div className="flex items-center 2xl:justify-start justify-center">
