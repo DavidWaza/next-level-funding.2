@@ -44,10 +44,10 @@ const Hero = () => {
           </Grid>
           <Grid item xs={12} md={12} lg={6}>
             <div className="flex xl:justify-end justify-center relative">
-              <div className="bg-white rounded-full h-20 w-20 p-2 backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30">
+              <div className="bg-white rounded-full h-20 w-20 p-2 backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-5">
                 <img src="/assets/eth.png" className="" alt="eth" />
               </div>
-              <div className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 w-30 h-30 rounded-full absolute p-[5rem] left-[40%] bottom-[30%] border border-slate-800 bg-white hidden lg:block"></div>
+              <div className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-5 w-30 h-30 rounded-full absolute p-[5rem] left-[40%] bottom-[30%] border border-slate-800 bg-white hidden lg:block"></div>
               <div className="relative z-30">
                 <img
                   src="/assets/laptop.gif"
@@ -55,7 +55,7 @@ const Hero = () => {
                   alt="trade-computer"
                 />
               </div>
-              <div className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-30 w-30 h-30 rounded-full absolute p-[5rem] left-[60%] bottom-[10%] border border-slate-800 bg-white hidden lg:block"></div>
+              <div className="backdrop-filter bg-[transparent] backdrop-blur-lg bg-opacity-5 w-30 h-30 rounded-full absolute p-[5rem] left-[60%] bottom-[10%] border border-slate-800 bg-white hidden lg:block"></div>
             </div>
           </Grid>
         </Grid>
