@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="mt-9 bg-[transparent] pt-4">
+    <div className="mt-9 bg-[transparent] pt-4 lg:px-[12rem] px-[0rem]">
       <div className="flex justify-center">
         <div className=" lg:hidden">
           <img src="/assets/logo.png" alt="" className="w-32 h-auto" />
@@ -34,59 +34,33 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex items-end w-full justify-center lg:justify-end gap-5">
-          {/* <nav className="flex items-center justify-end lexend gap-3">
-            <Link
-              href="/about-us"
-              className="link link-hover border-r border-slate-200 px-4"
-            >
-              About Us
-            </Link>
-            <Link
-              href="/contact-us"
-              className="link link-hover border-r border-slate-200 px-4"
-            >
-              Help center
-            </Link>
-            <Link
-              href="/trading rules"
-              className="link link-hover border-r border-slate-200 px-4"
-            >
-              Trading Rules
-            </Link>
-            <Link
-              href="/#faq"
-              className="link link-hover border-r border-slate-200 px-4"
-            >
-              FAQ
-            </Link>
-          </nav> */}
+        <div className="flex items-end w-full justify-center lg:justify-end gap-1">
           <nav className="flex lexend text-[10px] lg:text-[15px]">
             <Link
               href="/cookie-policy"
-              className="link link-hover  border-r border-slate-200 px-4"
+              className="link link-hover  border-r border-slate-200 px-2"
             >
               Cookie Policy
             </Link>
             <Link
               href="/privacy-policy"
-              className="link link-hover  border-r border-slate-200 px-4"
+              className="link link-hover  border-r border-slate-200 px-2"
             >
               Privacy Policy
             </Link>
             <Link
               href="/refund-policy"
-              className="link link-hover  border-r border-slate-200 px-4"
+              className="link link-hover  border-r border-slate-200 px-2"
             >
               Refund Policy
             </Link>
-            <Link href="/terms-of-service" className="link link-hover px-4">
+            <Link href="/terms-of-service" className="link link-hover px-2">
               Terms of Service
             </Link>
           </nav>
         </div>
       </footer>
-      <p className="mx-4 xl:text-justify text-white opacity-70 lexend text-[10px] lg:text-sm px-32 text-center lg:text-left lg:px-0">
+      <p className="mx-4 xl:text-justify text-white opacity-70 lexend text-[10px] lg:text-sm px-10 text-center lg:text-left lg:px-0">
         All information provided on this site is intended solely for the study
         purposes related to trading on financial markets and does not serve in
         any way as a specific investment recommendation, business
