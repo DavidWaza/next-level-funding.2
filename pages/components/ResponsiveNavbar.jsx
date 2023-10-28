@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <nav>
       <div
-        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-black fixed right-0 left-0 z-20`}
+        className={` home-bg justify-between px-4 mx-auto lg:px-[12rem] lg:items-center lg:flex bg-black fixed right-0 left-0 z-70`}
       >
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
