@@ -14,7 +14,7 @@ const Hero = () => {
             <p className="uppercase text-blue-500 font-bold lexend text-lg text-center lg:text-left md:px-10 lg:px-0 my-2">
               Next level funding
             </p>
-            <p className="text-white space-grotesk font-bold text-[1.8rem] text-center lg:text-[4.5rem] lg:text-left md:leading-[73px] leading-[39px]">
+            <p className="text-white space-grotesk font-bold text-[1.8rem] text-center lg:text-[4rem] lg:text-left md:leading-[73px] leading-[39px]">
               Our Capital, Our Risk,{" "}
               <span className="text-blue-500">Your Knowledge.</span>
             </p>
