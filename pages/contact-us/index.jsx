@@ -53,8 +53,8 @@ const ContactUs = () => {
             </Grid>
           </Grid>
         </Box>
-      </div>
       <Footer />
+      </div>
     </main>
   );
 };
