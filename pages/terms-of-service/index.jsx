@@ -433,8 +433,8 @@ const TermsOfService = () => {
               </p>
             </section>
           </Container>
-        </div>
           <Footer />
+        </div>
       </main>
     </div>
   );

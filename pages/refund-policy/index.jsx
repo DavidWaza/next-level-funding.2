@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "@mui/material";
 import Link from "next/link";
+import Footer from "../components/Footer";
 
 const RefundPolicy = () => {
   return (
@@ -72,6 +73,7 @@ const RefundPolicy = () => {
               </li>
             </ol>
           </Container>
+          <Footer />
         </div>
       </main>
     </div>

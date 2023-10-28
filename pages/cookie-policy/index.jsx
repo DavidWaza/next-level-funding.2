@@ -180,8 +180,8 @@ const CookiePolicy = () => {
             </p>
           </section>
         </Container>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

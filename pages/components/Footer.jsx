@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-end w-full justify-center lg:justify-end gap-1">
-          <nav className="flex lexend text-[10px] lg:text-[15px]">
+          <nav className="flex lexend text-[10px] lg:text-[15px] text-white">
             <Link
               href="/cookie-policy"
               className="link link-hover  border-r border-slate-200 px-2"
@@ -72,25 +72,25 @@ const Footer = () => {
         <div>
           <nav className="flex justify-center lexend text-[10px] mt-7 lg:text-[15px]">
             <Link
-              href="/cookie-policy"
+              href="/about-us"
               className="link link-hover  border-r border-slate-200 px-4"
             >
-              Cookie Policy
+              About us
             </Link>
             <Link
-              href="/privacy-policy"
+              href="/trading-funds"
               className="link link-hover  border-r border-slate-200 px-4"
             >
-              Privacy Policy
+              Trading Funds
             </Link>
             <Link
-              href="/refund-policy"
+              href="/#faq"
               className="link link-hover  border-r border-slate-200 px-4"
             >
-              Refund Policy
+              FAQ
             </Link>
-            <Link href="/terms-of-service" className="link link-hover px-4">
-              Terms of Service
+            <Link href="/contact-us" className="link link-hover px-4">
+              Help Center
             </Link>
           </nav>
         </div>
