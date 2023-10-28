@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="body-bg w-full px-4 lg:px-[12rem] pt-5">
+    <div className="body-bg w-full px-4 lg:px-[12rem] lg:pt-32">
       <Box sx={{ paddingTop: 15, flexGrow: 1 }}>
         <Grid container spacing={5}>
           <Grid item xs={12} md={12} lg={6}>
