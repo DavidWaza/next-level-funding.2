@@ -14,7 +14,7 @@ const Coverflow = () => {
         grabCursor={true}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         slidesPerView={"auto"}

@@ -78,7 +78,7 @@ const NavBar = () => {
               ></div>
               <div className="navbar-slide-out z-30 flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black text-white relative lexend ">
                 <Link href="/about-us">About Us</Link>
-                <Link href="/trading-rules">How Funding Works</Link>
+                <Link href="/trading-rules">Trading Rules</Link>
                 <Link href="/#faq">FAQ</Link>
                 <Link href="/contact-us">Help Center</Link>
                 <Button

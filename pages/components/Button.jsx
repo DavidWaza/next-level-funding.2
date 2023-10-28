@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const buttonImage = (
@@ -23,7 +22,7 @@ const Button = (props) => {
     <div>
         <button
           className={`border xl:px-6 rounded-full py-2 px-4 uppercase flex items-center gap-2 justify-center text-white  ${props.className}`}
-          onClick={() => console.log("click")}
+          onClick={props.onClick}
         >
           {props.showArrow && buttonImage}
           {props.text}
