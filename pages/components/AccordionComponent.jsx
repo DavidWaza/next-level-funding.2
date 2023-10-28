@@ -23,7 +23,7 @@ const AccordionComponent = (props) => {
           paddingBottom: 2,
           backgroundColor: "transparent",
         }}
-        className="border border-slate-600 rounded-xl"
+        className="border border-slate-600 rounded-xl bg-white bg-opacity-5"
         onClick={toggleAccordion}
       >
         <AccordionSummary
