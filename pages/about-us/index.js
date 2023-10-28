@@ -91,9 +91,13 @@ const AboutUs = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -top-[7rem] right-0">
-                <img src="/assets/trader.png" className="w-3/4 h-auto" alt="" />
-              </div>
+              <div className="absolute bottom-[30%] left-[60%]">
+            <img
+              src="/assets/trader.png"
+              className="w-3/4 h-auto"
+              alt=""
+            />
+          </div>
             </section>
           </section>
         </div>
