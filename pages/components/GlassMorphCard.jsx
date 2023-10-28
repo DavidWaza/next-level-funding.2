@@ -2,7 +2,7 @@ import React from "react";
 
 const GlassMorphCard = (props) => {
   return (
-    <div className="backdrop backdrop-blur-lg bg-opacity-5 text-white border border-slate-800 shadow-lg rounded-xl py-10 2xl:px-5 px-3">
+    <div className="bg-white backdrop backdrop-blur-lg bg-opacity-5 text-white border border-slate-700 shadow-lg rounded-xl py-10 2xl:px-5 px-3">
       {props.img && (
         <img src={props.img} className="w-32 h-auto " alt="illus-time" />
       )}
