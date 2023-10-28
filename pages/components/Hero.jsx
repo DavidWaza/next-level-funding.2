@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="body-bg w-full px-4 lg:px-[12rem] pt-10">
-      <Box sx={{ paddingTop: 20, flexGrow: 1 }}>
+    <div className="body-bg w-full px-4 lg:px-[12rem] pt-5">
+      <Box sx={{ paddingTop: 15, flexGrow: 1 }}>
         <Grid container spacing={5}>
           <Grid item xs={12} md={12} lg={6}>
             <p className="uppercase text-blue-500 font-bold lexend text-lg text-center lg:text-left md:px-10 lg:px-0 my-2">
