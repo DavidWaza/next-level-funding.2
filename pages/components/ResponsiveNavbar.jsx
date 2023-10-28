@@ -11,6 +11,23 @@ const NavBar = () => {
     setNavbar(!navbar);
   };
 
+  const handleNavigation = () => {
+    // Close the navbar if it is open.
+    if (navbar) {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    // Listen for navigation events.
+    window.addEventListener("popstate", handleNavigation);
+
+    // Remove the event listener when the component is unmounted.
+    return () => {
+      window.removeEventListener("popstate", handleNavigation);
+    };
+  }, [navbar]);
+
   return (
     <nav>
       <div
@@ -77,13 +94,14 @@ const NavBar = () => {
                 onClick={toggleNavbar}
               ></div>
               <div className="navbar-slide-out z-30 flex flex-col justify-center items-center px-10 py-5 gap-6 bg-black text-white relative lexend ">
-                <Link href="/about-us">About Us</Link>
-                <Link href="/trading-rules">Trading Rules</Link>
-                <Link href="/#faq">FAQ</Link>
-                <Link href="/contact-us">Help Center</Link>
+                <Link href="/about-us" onClick={toggleNavbar}>About Us</Link>
+                <Link href="/trading-rules" onClick={toggleNavbar}>Trading Rules</Link>
+                <Link href="/#faq" onClick={toggleNavbar}>FAQ</Link>
+                <Link href="/contact-us" onClick={toggleNavbar}>Help Center</Link>
                 <Button
                   className="bg-[#295cf7] border-none lexend hover:bg-blue-800"
                   text="get funded"
+                  onClick={toggleNavbar}
                   showArrow={true}
                 />
               </div>

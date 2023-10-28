@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="mt-9 bg-[transparent] pt-4 lg:px-[12rem] px-[0rem]">
+    <div className="mt-9 bg-[transparent] pt-4 lg:px-[12rem] px-[0rem] text-white">
       <div className="flex justify-center">
         <div className=" lg:hidden">
           <img src="/assets/logo.png" alt="" className="w-32 h-auto" />
