@@ -19,13 +19,13 @@ const GetInTouch = () => {
               <Link href="">
                 <img
                   src="/assets/ig.png"
-                  className="w-[60px] h-auto bg-slate-700 p-2 rounded-full"
+                  className="w-[40px] xl:w-[60px] h-auto bg-slate-700 p-2 rounded-full"
                 />
               </Link>
               <Link href="">
                 <img
                   src="/assets/email.png"
-                  className="w-[60px] h-auto bg-slate-700 p-2 rounded-full"
+                  className="w-[40px] xl:w-[60px] h-auto bg-slate-700 p-2 rounded-full"
                 />
               </Link>
             </div>

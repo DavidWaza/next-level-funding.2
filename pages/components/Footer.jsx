@@ -23,13 +23,13 @@ const Footer = () => {
             <Link href="">
               <img
                 src="/assets/ig.png"
-                className="w-[80px] h-auto bg-slate-700 p-2 rounded-full"
+                className="xl:w-[80px] h-auto bg-slate-700 p-2 rounded-full"
               />
             </Link>
             <Link href="">
               <img
                 src="/assets/email.png"
-                className="w-[80px] h-auto bg-slate-700 p-2 rounded-full"
+                className="xl:w-[80px] h-auto bg-slate-700 p-2 rounded-full"
               />
             </Link>
           </div>
@@ -38,23 +38,23 @@ const Footer = () => {
           <nav className="flex lexend text-[10px] lg:text-[15px] text-white">
             <Link
               href="/cookie-policy"
-              className="link link-hover  border-r border-slate-200 px-2"
+              className="link link-hover  border-r border-slate-200 px-1"
             >
               Cookie Policy
             </Link>
             <Link
               href="/privacy-policy"
-              className="link link-hover  border-r border-slate-200 px-2"
+              className="link link-hover  border-r border-slate-200 px-1"
             >
               Privacy Policy
             </Link>
             <Link
               href="/refund-policy"
-              className="link link-hover  border-r border-slate-200 px-2"
+              className="link link-hover  border-r border-slate-200 px-1"
             >
               Refund Policy
             </Link>
-            <Link href="/terms-of-service" className="link link-hover px-2">
+            <Link href="/terms-of-service" className="link link-hover px-1">
               Terms of Service
             </Link>
           </nav>
@@ -68,35 +68,35 @@ const Footer = () => {
         recommendation regarding the trading of investment instruments.
       </p>
       <div className="h-[0.5px] opacity-80 bg-white my-8 mx-4" />
-      <div className="lg:flex lg:justify-between text-center my-8">
+      <div className="lg:flex lg:justify-between text-center my-4">
         <div>
-          <nav className="flex justify-center lexend text-[10px] mt-7 lg:text-[15px]">
+          <nav className="flex justify-center lexend text-[10px] lg:text-[15px]">
             <Link
               href="/about-us"
-              className="link link-hover  border-r border-slate-200 px-4"
+              className="link link-hover  border-r border-slate-200 px-2"
             >
               About us
             </Link>
             <Link
               href="/trading-funds"
-              className="link link-hover  border-r border-slate-200 px-4"
+              className="link link-hover  border-r border-slate-200 px-2"
             >
               Trading Funds
             </Link>
             <Link
               href="/#faq"
-              className="link link-hover  border-r border-slate-200 px-4"
+              className="link link-hover  border-r border-slate-200 px-2"
             >
               FAQ
             </Link>
-            <Link href="/contact-us" className="link link-hover px-4">
+            <Link href="/contact-us" className="link link-hover px-2">
               Help Center
             </Link>
           </nav>
         </div>
-        <p className="mx-4 text-white text-center lexend text-[12px] lg:text-sm mt-7">
-            2023 © - Next Level Funding - Powered by OTB Solutions{" "}
-          </p>
+        <p className="mx-4 text-white text-center lexend text-[12px] lg:text-sm">
+          2023 © - Next Level Funding - Powered by OTB Solutions{" "}
+        </p>
       </div>
 
       <div className="flex gap-5 py-6 justify-center lg:hidden">
