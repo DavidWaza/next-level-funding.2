@@ -7,7 +7,7 @@ import { Grid, Box } from "@mui/material";
 const ContactUs = () => {
   return (
     <main className="w-full body-bg pt-[5rem] text-white  h-full">
-      <div className="grid items-center justify-center py-[5rem]">
+      <div className="grid items-center justify-center py-[5rem] px-[1.3rem]">
         <p className=" lexend uppercase text-slate-400  text-sm px-3 mt-[6rem] text-center">
           we would love to hear from you
         </p>
@@ -19,11 +19,11 @@ const ContactUs = () => {
           Offering straight forward solutions
         </p>
       </div>
-      <div className="home-bg py-[10rem] px-[4rem]">
+      <div className="home-bg py-[10rem]">
         <Box>
           <Grid container spacing={2}>
             <Grid xs={12} md={6} lg={6}>
-              <div className="grid flex-col justify-center mx-[3rem]">
+              <div className="grid flex-col justify-center mx-[3rem] px-[4rem]">
                 <div className="flex items-center">
                   <img
                     src="/assets/call.svg"
@@ -49,11 +49,13 @@ const ContactUs = () => {
               </div>
             </Grid>
             <Grid xs={12} md={6} lg={6}>
+              <div className="px-[2rem]">
               <ContactForm />
+              </div>
             </Grid>
           </Grid>
         </Box>
-      <Footer />
+      <Footer />  
       </div>
     </main>
   );

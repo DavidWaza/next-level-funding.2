@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="mt-9 bg-[transparent] pt-4 lg:px-[12rem] px-[0rem] text-white">
+    <div className="mt-9 bg-[transparent] pt-4 lg:px-[12rem] text-white">
       <div className="flex justify-center">
         <div className=" lg:hidden">
           <img src="/assets/logo.png" alt="" className="w-32 h-auto" />
@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <footer className="flex md:flex-row space-y-2 md:space-y-0 px-4 py-10 text-base-content">
+      <footer className="flex md:flex-row space-y-2 md:space-y-0 py-10 text-base-content">
         <div className="flex items-start">
           <div className="hidden lg:flex items-center justify-center gap-6">
             <img src="/assets/logo.png" alt="" className="w-32 h-auto " />

@@ -39,16 +39,15 @@ const ContactForm = () => {
         className="textarea textarea-bordered rounded-xl p-3 2xl:w-[30rem] w-full h-[10rem]"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <div className="flex flex-col w-[20%] mt-10">
-      <button
-        type="submit"
-        disabled={state.submitting}
-        className="border border-slate-600 rounded-full px-4 py-2"
-      >
-        Submit
-      </button>
+      <div className="flex flex-col w-full md:w-[40%] xl:w-[20%] mt-10">
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="border border-slate-600 rounded-full px-4 py-2"
+        >
+          Submit
+        </button>
       </div>
-     
     </form>
   );
 };
