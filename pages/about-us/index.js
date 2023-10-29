@@ -1,7 +1,9 @@
 
+import AboutCoverflow from "../components/AboutCoverflow";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import TableFlow from "../components/TableFlow";
+import TestimonialComponent from "../components/TestimonialComponent";
 
 const AboutUs = () => {
   return (
@@ -53,7 +55,9 @@ const AboutUs = () => {
             <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center ">
               Why Choose Us
             </p>
-            <div className="mt-10"></div>
+            <div className="mt-10">
+              <AboutCoverflow />
+            </div>
           </section>
 
           {/* tABLE */}
@@ -70,8 +74,7 @@ const AboutUs = () => {
               Testimonials
             </p>
             <div className="mt-[5rem]">
-              {/* <TestimonialComponent /> */}
-              {/* <TableExample /> */}
+              <TestimonialComponent />
             </div>
           </section>
           <section>

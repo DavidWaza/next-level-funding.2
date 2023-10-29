@@ -6,7 +6,9 @@ const GlassMorphCard = (props) => {
       {props.img && (
         <img src={props.img} className="w-32 h-auto " alt="illus-time" />
       )}
-      <p className={`lexend font-bold pt-4 pb-7 ${props.className}`}>{props.title}</p>
+      <p className={`lexend font-bold pt-4 pb-7 ${props.className}`}>
+        {props.title}
+      </p>
       <p className="lexend text-sm font-thin">{props.text}</p>
     </div>
   );

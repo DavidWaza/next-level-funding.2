@@ -5,7 +5,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import PriceCard from "./PriceCard";
 import GlassMorphCard from "./GlassMorphCard";
 const TestimonialComponent = () => {
   return (
@@ -21,18 +20,30 @@ const TestimonialComponent = () => {
         }}
         slidesPerView={3}
         pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        modules={[ Pagination, Autoplay]}
         className="mySwiper"
         initialSlide={1}
       >
         <SwiperSlide>
-          <GlassMorphCard />
+          <GlassMorphCard
+            className="text-xl"
+            title="Excellent Service and ex..."
+            text="Next Level Funding offers an exceptional experience for traders, with their deep expertise, personalized guidance, and supportive community. Their commitment to risk management and transparency stands out, making it a top choice for both new and experienced traders looking for growth and success."
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <GlassMorphCard />
+          <GlassMorphCard
+            className="text-xl"
+            title="Excellent Service and ex..."
+            text="Next Level Funding offers an exceptional experience for traders, with their deep expertise, personalized guidance, and supportive community. Their commitment to risk management and transparency stands out, making it a top choice for both new and experienced traders looking for growth and success."
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <GlassMorphCard />
+          <GlassMorphCard
+            className="text-xl"
+            title="Excellent Service and ex..."
+            text="Next Level Funding offers an exceptional experience for traders, with their deep expertise, personalized guidance, and supportive community. Their commitment to risk management and transparency stands out, making it a top choice for both new and experienced traders looking for growth and success."
+          />
         </SwiperSlide>
       </Swiper>
     </div>
