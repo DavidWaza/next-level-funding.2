@@ -1,115 +1,47 @@
-import React from 'react'
+import React from "react";
+import CarouselCard from "./CarouselCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
-
+import GlassMorphCard from "./GlassMorphCard";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-
-
-SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
-
-const AboutCoverflow = () => {
+const Coverflow = () => {
   return (
     <div>
-         <Swiper
-        navigation
-        pagination={{ clickable: true }}
-        effect="coverflow"
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: false
+          slideShadows: true,
         }}
-        slidesPerView={2}
-        centeredSlides
-        style={{ height: "500px" }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
+        className="mySwiper"
+        initialSlide={1}
       >
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-1.jpg)"
-          }}
-        >
-          Slide 1
+        <SwiperSlide>
+          <img src="/assets/pexels-lara-jameson-9324359.jpg" className="w-full h-auto" alt="" />
         </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-2.jpg)"
-          }}
-        >
-          Slide 2
+        <SwiperSlide>
+          <img src="/assets/pexels-mizuno-k-12912157.jpg" className="" alt="" />
         </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-3.jpg)"
-          }}
-        >
-          Slide 3
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-4.jpg)"
-          }}
-        >
-          Slide 4
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-5.jpg)"
-          }}
-        >
-          Slide 5
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-6.jpg)"
-          }}
-        >
-          Slide 6
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-7.jpg)"
-          }}
-        >
-          Slide 7
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-8.jpg)"
-          }}
-        >
-          Slide 8
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-9.jpg)"
-          }}
-        >
-          Slide 9
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-10.jpg)"
-          }}
-        >
-          Slide 10
+        <SwiperSlide>
+          <img src="/assets/pexels-sora-shimazaki-5668839.jpg" className="" alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
-  )
-}
+  );
+};
 
-export default AboutCoverflow
+export default Coverflow;
