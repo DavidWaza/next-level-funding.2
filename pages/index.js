@@ -6,6 +6,7 @@ import FaqComponent from "./components/FaqComponent";
 import FundingBenefits from "./components/FundingBenefits";
 import TradePotential from "./components/TradePotential";
 import Coverflow from "./components/Coverflow";
+import MobileGetInTouch from "./components/MobileGetInTouch";
 
 export default function Home() {
   return (
@@ -17,7 +18,12 @@ export default function Home() {
         <FundingBenefits />
         <PriceComponent />
         <FaqComponent />
-        <GetInTouch />
+        <div className="hidden xl:block">
+          <GetInTouch />
+        </div>
+        <div className="block xl:hidden">
+          <MobileGetInTouch />
+        </div>
         <Footer />
       </div>
     </main>

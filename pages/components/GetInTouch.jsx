@@ -5,7 +5,7 @@ import Link from "next/link";
 const GetInTouch = () => {
   return (
     <div>
-      <section className="my-[10rem] hidden lg:block">
+      <section className="my-[10rem]">
         <div className="relative top-0">
           <img src="/assets/rec.svg" className="w-full h-auto " alt="" />
           <div className="absolute lg:top-[10%] z-10 left-[4%]">
