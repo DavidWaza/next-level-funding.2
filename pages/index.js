@@ -1,7 +1,5 @@
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import MainCarousel from "./components/MainCarousel";
-import { Container } from "@mui/material";
 import GetInTouch from "./components/GetInTouch";
 import PriceComponent from "./components/PriceComponent";
 import FaqComponent from "./components/FaqComponent";
@@ -14,13 +12,13 @@ export default function Home() {
     <main className="h-full">
       <Hero />
       <div className="home-bg text-white xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
-          <TradePotential />
-          <Coverflow />
-          <FundingBenefits />
-          <PriceComponent />
-          <FaqComponent />
-          <GetInTouch />
-          <Footer />
+        <TradePotential />
+        <Coverflow />
+        <FundingBenefits />
+        <PriceComponent />
+        <FaqComponent />
+        <GetInTouch />
+        <Footer />
       </div>
     </main>
   );
