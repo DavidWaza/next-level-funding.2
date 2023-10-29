@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="h-full">
       <Hero />
-      <div className="home-bg text-white">
+      <div className="home-bg text-white xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
           <TradePotential />
           <Coverflow />
           <FundingBenefits />

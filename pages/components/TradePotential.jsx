@@ -3,8 +3,8 @@ import GlassMorph from "./GlassMorph";
 
 const TradePotential = () => {
   return (
-    <div>
-      <section className="lg:py-[10rem] grid flex-col justify-center items-center px-[2rem] py-[2rem]">
+    <div className="px-[2rem]">
+      <section className="lg:py-[10rem] grid flex-col justify-center items-center  py-[2rem]">
         <p className="lexend uppercase text-slate-400 text-center text-sm">
           Unlock your trading potential with our leading propritary trading firm
         </p>

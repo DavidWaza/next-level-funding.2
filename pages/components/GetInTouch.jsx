@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const GetInTouch = () => {
   return (
-    <div className="lg:px-[12rem] px-[2rem]">
+    <div>
       <section className="my-[10rem] hidden lg:block">
         <div className="relative top-0">
           <img src="/assets/rec.svg" className="w-full h-auto " alt="" />

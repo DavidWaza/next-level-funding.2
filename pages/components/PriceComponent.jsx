@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const PriceComponent = () => {
   return (
-    <div className="px-[1.3rem]" id="evaluation-package">
+    <div id="evaluation-package">
       <section className="grid flex-col justify-center items-center pt-[7rem]">
         <p className="lexend uppercase text-slate-400 text-center text-sm px-3">
           Tailored Solutions to Amplify Your Trading Success

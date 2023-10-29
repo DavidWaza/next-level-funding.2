@@ -41,7 +41,7 @@ const NavBar = () => {
   return (
     <nav>
       <div
-        className={` justify-between px-4 mx-auto xl:px-[12rem] lg:items-center lg:flex fixed right-0 left-0 z-50 ${
+        className={` justify-between px-4 mx-auto 2xl:px-[12rem] xl:px-[9rem] lg:items-center lg:flex fixed right-0 left-0 z-50 ${
           isScrolled ? "bg-black" : ""
         }`}
       >
