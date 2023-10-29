@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
           </p>
         </div>
         <div className="home-bg text-white text-lg -mt-10">
-          <Container>
+          <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
             <div className="py-9">
               <p className="lexend bont-bold">
                 This Privacy Policy describes how your personal information is
@@ -148,8 +148,10 @@ const PrivacyPolicy = () => {
                 legal, or regulatory reasons.
               </p>
             </section>
-          </Container>
-          <Footer />
+          </div>
+          <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
+            <Footer />
+          </div>
         </div>
       </main>
     </div>

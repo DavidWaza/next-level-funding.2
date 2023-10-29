@@ -50,12 +50,14 @@ const ContactUs = () => {
             </Grid>
             <Grid xs={12} md={6} lg={6}>
               <div className="px-[2rem]">
-              <ContactForm />
+                <ContactForm />
               </div>
             </Grid>
           </Grid>
         </Box>
-      <Footer />  
+      </div>
+      <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
+        <Footer />
       </div>
     </main>
   );

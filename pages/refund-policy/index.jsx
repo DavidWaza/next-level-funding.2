@@ -13,7 +13,7 @@ const RefundPolicy = () => {
           </p>
         </div>
         <div className="home-bg text-white text-lg -mt-5 lexend py-10">
-          <Container>
+          <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
             <ol>
               <li className="my-6">
                 1. All traders have the facility of receiving a full refund for
@@ -72,8 +72,10 @@ const RefundPolicy = () => {
                 </li>
               </li>
             </ol>
-          </Container>
-          <Footer />
+          </div>
+          <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
+            <Footer />
+          </div>
         </div>
       </main>
     </div>

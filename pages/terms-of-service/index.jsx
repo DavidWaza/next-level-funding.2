@@ -12,7 +12,7 @@ const TermsOfService = () => {
           </p>
         </div>
         <div className="home-bg text-lg -mt-[2rem] py-20">
-          <Container>
+          <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
             <div className="">
               <p className="lexend bont-bold">
                 NextLevelFunding offers this website, including all information,
@@ -432,8 +432,10 @@ const TermsOfService = () => {
                 Service constitutes acceptance of those changes.
               </p>
             </section>
-          </Container>
-          <Footer />
+          </div>
+          <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
+            <Footer />
+          </div>
         </div>
       </main>
     </div>

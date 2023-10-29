@@ -13,7 +13,7 @@ const CookiePolicy = () => {
         </div>
       </main>
       <div className="home-bg text-white text-lg">
-        <Container>
+        <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
           <section className="lexend py-9">
             When displaying content, advertisements and other functionalities on
             the{" "}
@@ -179,8 +179,10 @@ const CookiePolicy = () => {
               concerning you or similarly affects you to a significant extent.
             </p>
           </section>
-        </Container>
-        <Footer />
+        </div>
+        <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
+          <Footer />
+        </div>
       </div>
     </div>
   );

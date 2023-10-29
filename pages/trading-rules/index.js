@@ -13,7 +13,7 @@ const TradingRules = () => {
         </p>
       </div>
       <div className="home-bg ">
-        <div className="py-[10rem] 2xl:px-[20rem] px-[2rem]">
+        <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
           <section className="">
             <div className="flex items-center ">
               <p className="text-4xl lexend font-medium text-left">
@@ -95,7 +95,9 @@ const TradingRules = () => {
             </div>
           </section>
         </div>
-        <Footer />
+        <div className="xl:px-[9rem] 2xl:px-[12rem] px-[2rem]">
+          <Footer />
+        </div>
       </div>
     </main>
   );
