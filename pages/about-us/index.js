@@ -1,10 +1,9 @@
-import React from "react";
-import TableComponent from "../components/TableComponent";
+
 import Button from "../components/Button";
 import Footer from "../components/Footer";
-import Testimonial from "../components/Testimonial";
-const AboutUs = () => {
+import TableFlow from "../components/TableFlow";
 
+const AboutUs = () => {
   return (
     <main className="w-full body-bg pt-[5rem] text-white h-full">
       <div className="grid items-center justify-center py-[5rem]">
@@ -54,14 +53,12 @@ const AboutUs = () => {
             <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-center ">
               Why Choose Us
             </p>
-            <div className="mt-10">
-              
-            </div>
+            <div className="mt-10"></div>
           </section>
 
           {/* tABLE */}
-          <section className="flex justify-center 2xl:px-[10rem] px-[1.5rem] mt-[5rem]">
-            <TableComponent />
+          <section className="flex justify-center px-[1.5rem] mt-[5rem]">
+            <TableFlow />
           </section>
 
           {/* TESTIMONIALS */}
@@ -72,6 +69,10 @@ const AboutUs = () => {
             <p className="font-bold space-grotesk 2xl:text-6xl text-3xl text-left ">
               Testimonials
             </p>
+            <div className="mt-[5rem]">
+              {/* <TestimonialComponent /> */}
+              {/* <TableExample /> */}
+            </div>
           </section>
           <section>
             <section className="my-[10rem] relative hidden 2xl:block">
@@ -92,12 +93,8 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="absolute bottom-[30%] left-[60%]">
-            <img
-              src="/assets/trader.png"
-              className="w-3/4 h-auto"
-              alt=""
-            />
-          </div>
+                <img src="/assets/trader.png" className="w-3/4 h-auto" alt="" />
+              </div>
             </section>
           </section>
         </div>
